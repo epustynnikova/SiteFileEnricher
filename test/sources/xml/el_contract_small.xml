@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns6:cpElectronicContract schemeVersion="14.3" xmlns="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/printform/1" xmlns:ns5="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/common/1" xmlns:ns4="http://zakupki.gov.ru/oos/types/1" xmlns:ns3="http://zakupki.gov.ru/oos/base/1">
+    <versionNumber>1</versionNumber>
+    <contractNumber>463Р-24А/44</contractNumber>
+    <docType>1</docType>
+    <mainDocInfo>
+        <id>19502741</id>
+    </mainDocInfo>
+    <customerInfo>
+        <ns2:regNum>03731000593</ns2:regNum>
+        <ns2:consRegistryNum>001X7264</ns2:consRegistryNum>
+        <ns2:fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "НАЦИОНАЛЬНЫЙ МЕДИЦИНСКИЙ ИССЛЕДОВАТЕЛЬСКИЙ ЦЕНТР ЭНДОКРИНОЛОГИИ" МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</ns2:fullName>
+        <ns2:shortName>ФГБУ "НМИЦ ЭНДОКРИНОЛОГИИ" МИНЗДРАВА РОССИИ</ns2:shortName>
+        <ns2:postAddress>117292, Москва, Дмитрия Ульянова, дом 11</ns2:postAddress>
+        <ns2:factAddress>Российская Федерация, 117292, Москва, УЛ. ДМИТРИЯ УЛЬЯНОВА, Д. 11</ns2:factAddress>
+        <ns2:INN>7728016351</ns2:INN>
+        <ns2:KPP>772801001</ns2:KPP>
+        <OKOPFInfo>
+            <ns3:code>75103</ns3:code>
+            <ns3:singularName>Федеральные государственные бюджетные учреждения</ns3:singularName>
+        </OKOPFInfo>
+        <contactPersonInfo>
+            <ns2:lastName>Семенцова</ns2:lastName>
+            <ns2:firstName>И</ns2:firstName>
+            <ns2:middleName>О</ns2:middleName>
+        </contactPersonInfo>
+        <email>aptekaenc@endocrincentr.ru</email>
+        <contactPhone>8-495-1244311 доб.</contactPhone>
+        <customerAccountsDetailsInfo>
+            <customerAccountDetailsInfo>
+                <ns2:sid>59364856</ns2:sid>
+                <ns2:accountType>01</ns2:accountType>
+                <ns2:personalAccountNumber>20736X72640</ns2:personalAccountNumber>
+                <ns2:creditOrgName>УФК ПО Г. МОСКВЕ</ns2:creditOrgName>
+                <ns2:detailsCreditOrgText>ГУ БАНКА РОССИИ ПО ЦФО // УФК ПО Г. МОСКВЕ, г. Москва</ns2:detailsCreditOrgText>
+                <ns2:bankAccountNumber>03214643000000017300</ns2:bankAccountNumber>
+                <ns2:bik>004525988</ns2:bik>
+                <ns2:corrAccountNumber>40102810545370000003</ns2:corrAccountNumber>
+            </customerAccountDetailsInfo>
+            <customerAccountDetailsInfo>
+                <ns2:sid>59364857</ns2:sid>
+                <ns2:accountType>01</ns2:accountType>
+                <ns2:personalAccountNumber>21736X72640</ns2:personalAccountNumber>
+                <ns2:creditOrgName>УФК ПО Г. МОСКВЕ</ns2:creditOrgName>
+                <ns2:detailsCreditOrgText>ГУ БАНКА РОССИИ ПО ЦФО // УФК ПО Г. МОСКВЕ, г. Москва</ns2:detailsCreditOrgText>
+                <ns2:bankAccountNumber>03214643000000017300</ns2:bankAccountNumber>
+                <ns2:bik>004525988</ns2:bik>
+                <ns2:corrAccountNumber>40102810545370000003</ns2:corrAccountNumber>
+            </customerAccountDetailsInfo>
+            <customerAccountDetailsInfo>
+                <ns2:sid>59365298</ns2:sid>
+                <ns2:accountType>01</ns2:accountType>
+                <ns2:personalAccountNumber>22736X72640</ns2:personalAccountNumber>
+                <ns2:creditOrgName>УФК ПО Г. МОСКВЕ</ns2:creditOrgName>
+                <ns2:detailsCreditOrgText>ГУ БАНКА РОССИИ ПО ЦФО // УФК ПО Г. МОСКВЕ, г. Москва</ns2:detailsCreditOrgText>
+                <ns2:bankAccountNumber>03214643000000017300</ns2:bankAccountNumber>
+                <ns2:bik>004525988</ns2:bik>
+                <ns2:corrAccountNumber>40102810545370000003</ns2:corrAccountNumber>
+            </customerAccountDetailsInfo>
+        </customerAccountsDetailsInfo>
+    </customerInfo>
+    <participantInfo>
+        <individualPersonRFInfo>
+            <nameInfo>
+                <ns2:lastName>ЕГОРОВ</ns2:lastName>
+                <ns2:firstName>АНТОН</ns2:firstName>
+                <ns2:middleName>ВЛАДИМИРОВИЧ</ns2:middleName>
+            </nameInfo>
+            <isIP>true</isIP>
+            <IPInfo>
+                <OGRNIP>319774600109792</OGRNIP>
+            </IPInfo>
+            <INN>691504251665</INN>
+            <factAddress>Г.Москва, Г. ЗЕЛЕНОГРАД, </factAddress>
+            <postAddress>124365, Москва, Зеленоград, Георгиевский, д.37, к.2, кв.21</postAddress>
+            <email>3534178@mail.ru</email>
+            <contactPhone>7 9263534178</contactPhone>
+        </individualPersonRFInfo>
+        <contractorRegistryNum>19050870</contractorRegistryNum>
+        <participantAccountsDetailsInfo>
+            <electronicContractAccountsDetailsInfo>
+                <electronicContractAccountDetailsInfo>
+                    <ns2:sid>59363051</ns2:sid>
+                    <ns2:accountType>03</ns2:accountType>
+                    <ns2:creditOrgName>ООО "Банк Точка"</ns2:creditOrgName>
+                    <ns2:detailsCreditOrgText>ООО "Банк Точка", г. Москва</ns2:detailsCreditOrgText>
+                    <ns2:bankAccountNumber>40802810801500036575</ns2:bankAccountNumber>
+                    <ns2:bik>044525104</ns2:bik>
+                    <ns2:corrAccountNumber>30101810745374525104</ns2:corrAccountNumber>
+                    <ns2:counterparty160Name>ЕГОРОВ АНТОН ВЛАДИМИРОВИЧ (ИП)</ns2:counterparty160Name>
+                </electronicContractAccountDetailsInfo>
+            </electronicContractAccountsDetailsInfo>
+        </participantAccountsDetailsInfo>
+    </participantInfo>
+    <foundationInfo>
+        <placingWay>
+            <ns3:code>EA20</ns3:code>
+            <ns3:name>Электронный аукцион</ns3:name>
+        </placingWay>
+        <purchaseCode>241772801635177280100100222233250244</purchaseCode>
+        <purchaseNumber>0373100059324000613</purchaseNumber>
+        <protocolInfo>
+            <name>Протокол подведения итогов определения поставщика (подрядчика, исполнителя)</name>
+            <number>ИЭА1</number>
+            <publishDTInEIS>2024-12-11T00:00:00.000+03:00</publishDTInEIS>
+        </protocolInfo>
+    </foundationInfo>
+    <contractSubjectInfo>
+        <contractSubject>Поставка медицинских расходных материалов </contractSubject>
+        <productsInfo>
+            <productsInfoElectronicContract>
+                <productInfo>
+                    <sid>19803200</sid>
+                    <protocolObjectSid>47817998</protocolObjectSid>
+                    <indexNum>1</indexNum>
+                    <name>Помпа инсулиновая инфузионная амбулаторная со встроенным глюкометром</name>
+                    <OKPD2Info>
+                        <ns3:OKPDCode>32.50.50.190</ns3:OKPDCode>
+                        <ns3:OKPDName>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</ns3:OKPDName>
+                    </OKPD2Info>
+                    <KTRUInfo>
+                        <ns3:code>32.50.50.190-00000403</ns3:code>
+                        <ns3:name>Помпа инсулиновая инфузионная амбулаторная со встроенным глюкометром</ns3:name>
+                        <ns3:versionId>77990</ns3:versionId>
+                        <ns3:versionNumber>1</ns3:versionNumber>
+                        <characteristics>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206519</ns2:sid>
+                                <ns2:name>Частота передачи данных ГГц</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812514</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>2.4</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206520</ns2:sid>
+                                <ns2:name>Настраиваемые сигналы об изменении уровня глюкозы</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812515</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206521</ns2:sid>
+                                <ns2:name>Приращение временной базальной дозы</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812516</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>744</ns3:code>
+                                            <ns3:nationalCode>%</ns3:nationalCode>
+                                            <ns3:name>Процент</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>5</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206522</ns2:sid>
+                                <ns2:name>Программируемый шаг увеличения болюса</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812517</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>9910</ns3:code>
+                                            <ns3:nationalCode>МЕ</ns3:nationalCode>
+                                            <ns3:name>Международная единица биологической активности</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>0.1</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206523</ns2:sid>
+                                <ns2:name>Беспроводная технология Bluetooth</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812518</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206524</ns2:sid>
+                                <ns2:name>Питание прибора</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812519</ns2:sid>
+                                        <ns2:qualityDescription>AA – 1,5 Вольт (литиевый) (FR6) AA – 1,5 Вольт (щелочной) (LR6) AA – 1,5 Вольт (никель-металл-гидридный, перезаряжаемый) (NiMH)  (HR6)</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206525</ns2:sid>
+                                <ns2:name>Диапазон временной базальной дозы</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812520</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>744</ns3:code>
+                                            <ns3:nationalCode>%</ns3:nationalCode>
+                                            <ns3:name>Процент</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>200</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206526</ns2:sid>
+                                <ns2:name>Настраиваемая скорость болюса, МЕ</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812521</ns2:sid>
+                                        <ns2:qualityDescription>1,5, 15</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206527</ns2:sid>
+                                <ns2:name>Виды сигнала тревоги – основные и повторные по основным</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812522</ns2:sid>
+                                        <ns2:qualityDescription>об уровне глюкозы, о калибровке, о потере сигнала</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206528</ns2:sid>
+                                <ns2:name>Степень защиты от действия воды</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812523</ns2:sid>
+                                        <ns2:qualityDescription>IPX 8</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206529</ns2:sid>
+                                <ns2:name>Временной интервал для графиков тренда глюкозы cенсора час</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812524</ns2:sid>
+                                        <ns2:qualityDescription>3, 6, 12, 24</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206530</ns2:sid>
+                                <ns2:name>Подсветка</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812525</ns2:sid>
+                                        <ns2:qualityDescription>Светоизлучающий диод (СИД)</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206531</ns2:sid>
+                                <ns2:name>Время активного инсулина</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812526</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>356</ns3:code>
+                                            <ns3:nationalCode>ч</ns3:nationalCode>
+                                            <ns3:name>Час</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>8</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206532</ns2:sid>
+                                <ns2:name>Отключаемые сигналы тревоги</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812527</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64206533</ns2:sid>
+                                <ns2:name>Максимальная болюсная доза МЕ/час</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66812528</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>75</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207934</ns2:sid>
+                                <ns2:name>Количество базальных профилей</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813949</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>8</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207935</ns2:sid>
+                                <ns2:name>Устойчива к воздействию водопроводной воды и обычных чистящих растворов</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813950</ns2:sid>
+                                        <ns2:qualityDescription>Полное соответствие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207936</ns2:sid>
+                                <ns2:name>Максимальная базальная доза МЕ/час</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813951</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>35</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207937</ns2:sid>
+                                <ns2:name>Количество измерений уровня глюкозы в сутки</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813952</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>288</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207938</ns2:sid>
+                                <ns2:name>Задержка выключения экрана и меню по умолчанию Сек</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813953</ns2:sid>
+                                        <ns2:qualityDescription>15, 30, 60, 180</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207939</ns2:sid>
+                                <ns2:name>Приращение базальной дозы МЕ/час</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813954</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>0.1</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207940</ns2:sid>
+                                <ns2:name>Максимальное количество границ уровня глюкозы</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813955</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>8</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207941</ns2:sid>
+                                <ns2:name>Единицы измерения глюкозы крови: ммоль/л, мг/дл</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813956</ns2:sid>
+                                        <ns2:qualityDescription>Полное соответствие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207942</ns2:sid>
+                                <ns2:name>Типы подачи сигнала тревоги - звуковой, вибрация</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813957</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207943</ns2:sid>
+                                <ns2:name>Поддерживаемый диапазон значений глюкозы глюкометра ммоль/л или мл/дл</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813958</ns2:sid>
+                                        <ns2:qualityDescription>Диапазон 1,1 - 33,3 ммоль/л; диапазон 20 - 600 мл/дл</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207944</ns2:sid>
+                                <ns2:name>Память на данные</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813959</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>360</ns3:code>
+                                            <ns3:nationalCode>нед</ns3:nationalCode>
+                                            <ns3:name>Неделя</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>12.86</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207945</ns2:sid>
+                                <ns2:name>Встроенный калькулятор расчёта болюсной дозы инсулина, с учетом активного инсулина, коэффициента чувствительности к инсулину, углеводного коэффициента, целевого диапазона гликемии</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813960</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207946</ns2:sid>
+                                <ns2:name>Материал корпуса монитора - ударопрочный пластик</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813961</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                        </characteristics>
+                    </KTRUInfo>
+                    <hierarchyType>ND</hierarchyType>
+                    <type>PRODUCT</type>
+                    <sum>159324000.00</sum>
+                    <medicalProductInfo>
+                        <isMedicalProductInfo>true</isMedicalProductInfo>
+                        <medicalProductCode>207650</medicalProductCode>
+                        <medicalProductName>Помпа инсулиновая инфузионная амбулаторная со встроенным глюкометром</medicalProductName>
+                        <certificateNameMedicalProduct>Помпа инсулиновая MiniMed 720G с принадлежностями</certificateNameMedicalProduct>
+                    </medicalProductInfo>
+                    <trademarkInfo>
+                        <trademark>Medtronic</trademark>
+                    </trademarkInfo>
+                    <OKEIInfo>
+                        <ns3:code>796</ns3:code>
+                        <ns3:nationalCode>шт</ns3:nationalCode>
+                        <ns3:name>Штука</ns3:name>
+                    </OKEIInfo>
+                    <quantity>1065</quantity>
+                    <price>149600.00</price>
+                    <originCountryInfo>
+                        <ns3:countryCode>360</ns3:countryCode>
+                        <ns3:countryFullName>Республика Индонезия</ns3:countryFullName>
+                    </originCountryInfo>
+                    <originCountryInfo>
+                        <ns3:countryCode>840</ns3:countryCode>
+                        <ns3:countryFullName>Соединенные Штаты Америки</ns3:countryFullName>
+                    </originCountryInfo>
+                    <VATRateInfo>
+                        <ns3:VATCode>RN</ns3:VATCode>
+                        <ns3:VATName>Без НДС</ns3:VATName>
+                    </VATRateInfo>
+                    <isDuplicated>false</isDuplicated>
+                </productInfo>
+                <productInfo>
+                    <sid>19803201</sid>
+                    <protocolObjectSid>47817999</protocolObjectSid>
+                    <indexNum>2</indexNum>
+                    <name>Помпа инсулиновая инфузионная амбулаторная со встроенным глюкометром</name>
+                    <OKPD2Info>
+                        <ns3:OKPDCode>32.50.50.190</ns3:OKPDCode>
+                        <ns3:OKPDName>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</ns3:OKPDName>
+                    </OKPD2Info>
+                    <KTRUInfo>
+                        <ns3:code>32.50.50.190-00000403</ns3:code>
+                        <ns3:name>Помпа инсулиновая инфузионная амбулаторная со встроенным глюкометром</ns3:name>
+                        <ns3:versionId>77990</ns3:versionId>
+                        <ns3:versionNumber>1</ns3:versionNumber>
+                        <characteristics>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207947</ns2:sid>
+                                <ns2:name>Приращение базальной дозы МЕ/час</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813962</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>0.1</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207948</ns2:sid>
+                                <ns2:name>Максимальная болюсная доза МЕ/час</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813963</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>75</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207949</ns2:sid>
+                                <ns2:name>Подсветка</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813964</ns2:sid>
+                                        <ns2:qualityDescription>Светоизлучающий диод (СИД)</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207950</ns2:sid>
+                                <ns2:name>Устойчива к воздействию водопроводной воды и обычных чистящих растворов</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813965</ns2:sid>
+                                        <ns2:qualityDescription>Полное соответствие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207951</ns2:sid>
+                                <ns2:name>Время активного инсулина</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813966</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>356</ns3:code>
+                                            <ns3:nationalCode>ч</ns3:nationalCode>
+                                            <ns3:name>Час</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>8</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207952</ns2:sid>
+                                <ns2:name>Настраиваемая скорость болюса МЕ</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813967</ns2:sid>
+                                        <ns2:qualityDescription>1,5, 15</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207953</ns2:sid>
+                                <ns2:name>Питание прибора</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813968</ns2:sid>
+                                        <ns2:qualityDescription>AA – 1,5 Вольт (литиевый) (FR6) AA – 1,5 Вольт (щелочной) (LR6) AA – 1,5 Вольт (никель-металл-гидридный, перезаряжаемый) (NiMH)  (HR6)</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207954</ns2:sid>
+                                <ns2:name>Отключаемые сигналы тревоги</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813969</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207955</ns2:sid>
+                                <ns2:name>Поддерживаемый диапазон значений глюкозы глюкометра ммоль/л или мл/дл</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813970</ns2:sid>
+                                        <ns2:qualityDescription>Диапазон 1,1-33,3 ммоль/л; диапазон 20-600 мл/дл</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207956</ns2:sid>
+                                <ns2:name>Количество базальных профилей</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813971</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>8</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207957</ns2:sid>
+                                <ns2:name>Диапазон временной базальной дозы</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813972</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>744</ns3:code>
+                                            <ns3:nationalCode>%</ns3:nationalCode>
+                                            <ns3:name>Процент</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>200</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207958</ns2:sid>
+                                <ns2:name>Максимальная базальная доза МЕ/час</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813973</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>35</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207959</ns2:sid>
+                                <ns2:name>Материал корпуса монитора - ударопрочный пластик</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813974</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207960</ns2:sid>
+                                <ns2:name>Настраиваемые сигналы об изменении уровня глюкозы</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813975</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207961</ns2:sid>
+                                <ns2:name>Память на данные</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813976</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>360</ns3:code>
+                                            <ns3:nationalCode>нед</ns3:nationalCode>
+                                            <ns3:name>Неделя</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>12.86</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207962</ns2:sid>
+                                <ns2:name>Приращение временной базальной дозы</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813977</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>744</ns3:code>
+                                            <ns3:nationalCode>%</ns3:nationalCode>
+                                            <ns3:name>Процент</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>5</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207963</ns2:sid>
+                                <ns2:name>Типы подачи сигнала тревоги - звуковой, вибрация</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813978</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207964</ns2:sid>
+                                <ns2:name>Беспроводная технология Bluetooth</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813979</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207965</ns2:sid>
+                                <ns2:name>Количество измерений уровня глюкозы в сутки</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813980</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>288</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207966</ns2:sid>
+                                <ns2:name>Задержка выключения экрана и меню по умолчанию Сек</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813981</ns2:sid>
+                                        <ns2:qualityDescription>15, 30, 60, 180</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207967</ns2:sid>
+                                <ns2:name>Программируемый шаг увеличения болюса</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813982</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>9910</ns3:code>
+                                            <ns3:nationalCode>МЕ</ns3:nationalCode>
+                                            <ns3:name>Международная единица биологической активности</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>0.1</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207968</ns2:sid>
+                                <ns2:name>Максимальное количество границ уровня глюкозы</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813983</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>8</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207969</ns2:sid>
+                                <ns2:name>Степень защиты от действия воды</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813984</ns2:sid>
+                                        <ns2:qualityDescription>IPX 8</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207970</ns2:sid>
+                                <ns2:name>Виды сигнала тревоги – основные и повторные по основным</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813985</ns2:sid>
+                                        <ns2:qualityDescription>об уровне глюкозы, о калибровке, о потере сигнала</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207971</ns2:sid>
+                                <ns2:name>Частота передачи данных ГГц</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813986</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>2.4</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207972</ns2:sid>
+                                <ns2:name>Функция остановки и возобновление введения инсулина</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813987</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207973</ns2:sid>
+                                <ns2:name>Временной интервал для графиков тренда глюкозы cенсора час</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813988</ns2:sid>
+                                        <ns2:qualityDescription>3, 6, 12, 24</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207974</ns2:sid>
+                                <ns2:name>Единицы измерения глюкозы крови: ммоль/л, мг/дл</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813989</ns2:sid>
+                                        <ns2:qualityDescription>Полное соответствие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207975</ns2:sid>
+                                <ns2:name>Встроенный калькулятор расчёта болюсной дозы инсулина, с учетом активного инсулина, коэффициента чувствительности к инсулину, углеводного коэффициента, целевого диапазона гликемии</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813990</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                        </characteristics>
+                    </KTRUInfo>
+                    <hierarchyType>ND</hierarchyType>
+                    <type>PRODUCT</type>
+                    <sum>15785000.00</sum>
+                    <medicalProductInfo>
+                        <isMedicalProductInfo>true</isMedicalProductInfo>
+                        <medicalProductCode>207650</medicalProductCode>
+                        <medicalProductName>Помпа инсулиновая инфузионная амбулаторная со встроенным глюкометром</medicalProductName>
+                        <certificateNameMedicalProduct>Помпа инсулиновая MiniMed 740G с принадлежностями</certificateNameMedicalProduct>
+                    </medicalProductInfo>
+                    <trademarkInfo>
+                        <trademark>Medtronic</trademark>
+                    </trademarkInfo>
+                    <OKEIInfo>
+                        <ns3:code>796</ns3:code>
+                        <ns3:nationalCode>шт</ns3:nationalCode>
+                        <ns3:name>Штука</ns3:name>
+                    </OKEIInfo>
+                    <quantity>50</quantity>
+                    <price>315700.00</price>
+                    <originCountryInfo>
+                        <ns3:countryCode>840</ns3:countryCode>
+                        <ns3:countryFullName>Соединенные Штаты Америки</ns3:countryFullName>
+                    </originCountryInfo>
+                    <VATRateInfo>
+                        <ns3:VATCode>RN</ns3:VATCode>
+                        <ns3:VATName>Без НДС</ns3:VATName>
+                    </VATRateInfo>
+                    <isDuplicated>false</isDuplicated>
+                </productInfo>
+                <productInfo>
+                    <sid>19803582</sid>
+                    <protocolObjectSid>47818000</protocolObjectSid>
+                    <indexNum>3</indexNum>
+                    <name>Помпа инсулиновая инфузионная амбулаторная со встроенным глюкометром</name>
+                    <OKPD2Info>
+                        <ns3:OKPDCode>32.50.50.190</ns3:OKPDCode>
+                        <ns3:OKPDName>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</ns3:OKPDName>
+                    </OKPD2Info>
+                    <KTRUInfo>
+                        <ns3:code>32.50.50.190-00000403</ns3:code>
+                        <ns3:name>Помпа инсулиновая инфузионная амбулаторная со встроенным глюкометром</ns3:name>
+                        <ns3:versionId>77990</ns3:versionId>
+                        <ns3:versionNumber>1</ns3:versionNumber>
+                        <characteristics>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207976</ns2:sid>
+                                <ns2:name>Поддерживаемый диапазон значений глюкозы глюкометра ммоль/л или мл/дл</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813991</ns2:sid>
+                                        <ns2:qualityDescription>Диапазон 1,1-33,3 ммоль/л; диапазон 20-600 мл/дл</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207977</ns2:sid>
+                                <ns2:name>Встроенный калькулятор расчёта болюсной дозы инсулина, с учетом активного инсулина, коэффициента чувствительности к инсулину, углеводного коэффициента, целевого диапазона гликемии</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813992</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207978</ns2:sid>
+                                <ns2:name>Функция автоматической коррекции базальных доз</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813993</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207979</ns2:sid>
+                                <ns2:name>Беспроводная технология Bluetooth</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813994</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207980</ns2:sid>
+                                <ns2:name>Максимальная базальная доза МЕ/час</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813995</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>35</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207981</ns2:sid>
+                                <ns2:name>Степень защиты от действия воды</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813996</ns2:sid>
+                                        <ns2:qualityDescription>IPX 8</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207982</ns2:sid>
+                                <ns2:name>Настраиваемая скорость болюса МЕ</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813997</ns2:sid>
+                                        <ns2:qualityDescription>1,5, 15</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207983</ns2:sid>
+                                <ns2:name>Питание прибора</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813998</ns2:sid>
+                                        <ns2:qualityDescription>AA – 1,5 Вольт (литиевый) (FR6) AA – 1,5 Вольт (щелочной) (LR6) AA – 1,5 Вольт (никель-металл-гидридный, перезаряжаемый) (NiMH)  (HR6)</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207984</ns2:sid>
+                                <ns2:name>Типы подачи сигнала тревоги - звуковой, вибрация</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66813999</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207985</ns2:sid>
+                                <ns2:name>Виды сигнала тревоги – основные и повторные по основным</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814000</ns2:sid>
+                                        <ns2:qualityDescription>об уровне глюкозы, о калибровке, о потере сигнала</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207986</ns2:sid>
+                                <ns2:name>Материал корпуса монитора - ударопрочный пластик</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814001</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207987</ns2:sid>
+                                <ns2:name>Время активного инсулина</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814002</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>356</ns3:code>
+                                            <ns3:nationalCode>ч</ns3:nationalCode>
+                                            <ns3:name>Час</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>8</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207988</ns2:sid>
+                                <ns2:name>Максимальное количество границ уровня глюкозы</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814003</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>8</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207989</ns2:sid>
+                                <ns2:name>Приращение временной базальной дозы</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814004</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>744</ns3:code>
+                                            <ns3:nationalCode>%</ns3:nationalCode>
+                                            <ns3:name>Процент</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>5</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207990</ns2:sid>
+                                <ns2:name>Подсветка</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814005</ns2:sid>
+                                        <ns2:qualityDescription>Светоизлучающий диод (СИД)</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207991</ns2:sid>
+                                <ns2:name>Устойчива к воздействию водопроводной воды и обычных чистящих растворов</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814006</ns2:sid>
+                                        <ns2:qualityDescription>Полное соответствие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207992</ns2:sid>
+                                <ns2:name>Диапазон временной базальной дозы</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814007</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>744</ns3:code>
+                                            <ns3:nationalCode>%</ns3:nationalCode>
+                                            <ns3:name>Процент</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>200</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207993</ns2:sid>
+                                <ns2:name>Программируемый шаг увеличения болюса</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814008</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>9910</ns3:code>
+                                            <ns3:nationalCode>МЕ</ns3:nationalCode>
+                                            <ns3:name>Международная единица биологической активности</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>0.1</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207994</ns2:sid>
+                                <ns2:name>Количество базальных профилей</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814009</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>8</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207995</ns2:sid>
+                                <ns2:name>Задержка выключения экрана и меню по умолчанию Сек</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814010</ns2:sid>
+                                        <ns2:qualityDescription>15, 30, 60, 180</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207996</ns2:sid>
+                                <ns2:name>Временной интервал для графиков тренда глюкозы cенсора час</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814011</ns2:sid>
+                                        <ns2:qualityDescription>3, 6, 12, 24</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207997</ns2:sid>
+                                <ns2:name>Автоматический корректирующий болюс</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814012</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207998</ns2:sid>
+                                <ns2:name>Единицы измерения глюкозы крови: ммоль/л, мг/дл</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814013</ns2:sid>
+                                        <ns2:qualityDescription>Полное соответствие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64207999</ns2:sid>
+                                <ns2:name>Максимальная болюсная доза МЕ/час</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814014</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>75</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64208000</ns2:sid>
+                                <ns2:name>Частота передачи данных ГГц</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814015</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>2.4</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64208001</ns2:sid>
+                                <ns2:name>Количество измерений уровня глюкозы в сутки</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814016</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>288</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64208002</ns2:sid>
+                                <ns2:name>Функция остановки и возобновление введения инсулина</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814017</ns2:sid>
+                                        <ns2:qualityDescription>Наличие</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64208003</ns2:sid>
+                                <ns2:name>Память на данные</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814018</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>360</ns3:code>
+                                            <ns3:nationalCode>нед</ns3:nationalCode>
+                                            <ns3:name>Неделя</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>12.86</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>64208004</ns2:sid>
+                                <ns2:name>Приращение базальной дозы МЕ/час</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>66814019</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>0.1</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                        </characteristics>
+                    </KTRUInfo>
+                    <hierarchyType>ND</hierarchyType>
+                    <type>PRODUCT</type>
+                    <sum>122760000.00</sum>
+                    <medicalProductInfo>
+                        <isMedicalProductInfo>true</isMedicalProductInfo>
+                        <medicalProductCode>207650</medicalProductCode>
+                        <medicalProductName>Помпа инсулиновая инфузионная амбулаторная со встроенным глюкометром</medicalProductName>
+                        <certificateNameMedicalProduct>Помпа инсулиновая MiniMed 780G с принадлежностями</certificateNameMedicalProduct>
+                    </medicalProductInfo>
+                    <trademarkInfo>
+                        <trademark>Medtronic</trademark>
+                    </trademarkInfo>
+                    <OKEIInfo>
+                        <ns3:code>796</ns3:code>
+                        <ns3:nationalCode>шт</ns3:nationalCode>
+                        <ns3:name>Штука</ns3:name>
+                    </OKEIInfo>
+                    <quantity>310</quantity>
+                    <price>396000.00</price>
+                    <originCountryInfo>
+                        <ns3:countryCode>840</ns3:countryCode>
+                        <ns3:countryFullName>Соединенные Штаты Америки</ns3:countryFullName>
+                    </originCountryInfo>
+                    <VATRateInfo>
+                        <ns3:VATCode>RN</ns3:VATCode>
+                        <ns3:VATName>Без НДС</ns3:VATName>
+                    </VATRateInfo>
+                    <isDuplicated>false</isDuplicated>
+                </productInfo>
+            </productsInfoElectronicContract>
+        </productsInfo>
+    </contractSubjectInfo>
+    <contractConditionsInfo>
+        <contractExecutionTermsInfo>
+            <notRelativeTermsInfo>
+                <startDate>2025-01-01</startDate>
+                <endDate>2026-01-31</endDate>
+            </notRelativeTermsInfo>
+        </contractExecutionTermsInfo>
+        <stagesInfo>
+            <stageInfo>
+                <sid>6412948</sid>
+                <purchaseStageSid>12680885</purchaseStageSid>
+                <termsInfo>
+                    <notRelativeTermsInfo>
+                        <startDate>2025-01-01</startDate>
+                        <endDate>2026-01-31</endDate>
+                    </notRelativeTermsInfo>
+                </termsInfo>
+                <paymentsSumInfo>
+                    <paymentsSum>297869000.00</paymentsSum>
+                    <advancePaymentSumInfo>
+                        <sum>0.00</sum>
+                        <sumInPercents>0.0</sumInPercents>
+                    </advancePaymentSumInfo>
+                    <nonbudgetFinancingsInfo>
+                        <KVR>244</KVR>
+                        <paymentYearsInfo>
+                            <paymentYearInfo>
+                                <paymentYear>2025</paymentYear>
+                                <paymentSum>297869000.00</paymentSum>
+                            </paymentYearInfo>
+                        </paymentYearsInfo>
+                    </nonbudgetFinancingsInfo>
+                </paymentsSumInfo>
+            </stageInfo>
+        </stagesInfo>
+        <deliveryPlaceInfo>
+            <byKLADRInfo>
+                <sid>3604645</sid>
+                <KLADRInfo>
+                    <kladrCode>77000000000</kladrCode>
+                    <fullName>Москва</fullName>
+                </KLADRInfo>
+                <deliveryPlace>117292, г. Москва, Ул. Дмитрия Ульянова, д. 11</deliveryPlace>
+                <noKladrForRegionSettlementInfo/>
+            </byKLADRInfo>
+        </deliveryPlaceInfo>
+        <contractGuaranteeInfo>
+            <isContractGuarantee>true</isContractGuarantee>
+            <part>5.0</part>
+            <amount>14893450.00</amount>
+            <procedureInfo>В соответствии со ст. 96 44-ФЗ Реквизиты банковского счета Заказчика в случае, если участником закупки будет выбран способ обеспечения контракта - внесение денежных средств: ИНН 7728016351 КПП 772801001 УФК по г. Москве (ФГБУ «НМИЦ эндокринологии» Минздрава России л/с 20736X72640) р/с 40102810545370000003 УФК по г. Москве (ФГБУ «НМИЦ эндокринологии» Минздрава России) БИК 004525988 КБК 00000000000000000510 ОКТМО 453970000 Номер счета получателя: 03214643000000017300</procedureInfo>
+        </contractGuaranteeInfo>
+        <warrantyInfo>
+            <warrantyTerm>В соответствии с Техническим заданием и (или) проектом Контрактам</warrantyTerm>
+        </warrantyInfo>
+        <otherConditionsInfo>
+            <oneSideRejection>true</oneSideRejection>
+        </otherConditionsInfo>
+    </contractConditionsInfo>
+    <contractFinancingInfo>
+        <financingSourcesInfo>
+            <nonbudgetFinancingsInfo>
+                <selfFunds>true</selfFunds>
+            </nonbudgetFinancingsInfo>
+            <bankSupportContractRequiredInfo>
+                <ns2:bankSupportContractRequired>false</ns2:bankSupportContractRequired>
+            </bankSupportContractRequiredInfo>
+        </financingSourcesInfo>
+        <contractPriceInfo>
+            <priceType>P</priceType>
+            <price>297869000.00</price>
+            <priceVAT>0.00</priceVAT>
+            <currencyInfo>
+                <ns3:code>RUB</ns3:code>
+                <ns3:name>РОССИЙСКИЙ РУБЛЬ</ns3:name>
+            </currencyInfo>
+        </contractPriceInfo>
+        <paymentProcedureInfo>
+            <holdCashCondition>true</holdCashCondition>
+            <amountsReducedByTaxes>false</amountsReducedByTaxes>
+        </paymentProcedureInfo>
+        <paymentsInfo>
+            <paymentYearsInfo>
+                <paymentYearInfo>
+                    <paymentYear>2025</paymentYear>
+                    <paymentSum>297869000.00</paymentSum>
+                </paymentYearInfo>
+                <paymentsSum>297869000.00</paymentsSum>
+            </paymentYearsInfo>
+        </paymentsInfo>
+    </contractFinancingInfo>
+    <attachmentsInfo>
+        <attachmentInfo>
+            <publishedContentId>37CAB2E614884E699A4640F1FE3BF727</publishedContentId>
+            <fileName>КОНТРАКТ № 463Р-24А.docx</fileName>
+            <docDescription>КОНТРАКТ № 463Р-24А/44</docDescription>
+            <contentId>37CAB2E614884E699A4640F1FE3BF727</contentId>
+            <fileSize>62477</fileSize>
+        </attachmentInfo>
+    </attachmentsInfo>
+    <printFormFieldsInfo>
+        <revisionNumber>1</revisionNumber>
+    </printFormFieldsInfo>
+</ns6:cpElectronicContract>

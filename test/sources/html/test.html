@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:agr="http://zakupki.gov.ru/oos/agreement/1" xmlns:base="http://zakupki.gov.ru/oos/base/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1" xmlns:cp="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:pf="http://zakupki.gov.ru/oos/printform/1" xmlns:qrcode="http://zakupki.gov.ru/oos/qrcode/1" xmlns:sign="http://zakupki.gov.ru/oos/sign/1">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <title>Печатная форма</title>
+        <meta content="IE=edge" http-equiv="x-ua-compatible"/>
+        <style type="text/css">
+                    /*
+                    Для изоляции наших стилей от воздействия на внешнюю систему
+                    - перед каждым стилем добавлять .pfRec (.pfRec {селектор})
+                    - весь контент должен быть в блоке div c классом pfRec
+                    */
+
+                    /* обнуляем стили тегов для ПФ */
+                    .pfRec p {
+                        padding: 0;
+                    }
+                    /* =========================== */
+
+                    .pfRec * {
+                        font-size: 12px;
+                    }
+
+                    .pfRec .block {
+                        margin-bottom: 30px;
+                    }
+
+                    .pfRec .sub-block {
+                        margin-bottom: 30px;
+                    }
+
+                    .pfRec .block_title {
+                        font-size: 14px;
+                        font-weight: bold;
+                        margin-bottom: 14px;
+                    }
+
+                    .pfRec .sub-block_title {
+                        font-weight: bold;
+                        margin-bottom: 12px;
+                    }
+
+                    .pfRec p.header2 {
+                        font-weight: bold;
+                    }
+
+                    .pfRec .printFormTbl {
+                        border-collapse: collapse;
+                        width: 100%;
+                        table-layout: fixed;
+                    }
+
+                    .pfRec .container {
+                        margin: 0 auto;
+                    }
+
+                    body &gt; .pfRec &gt; .container {
+                        width: 90%;
+                    }
+
+                    .pfRec .printFormTbl .w4p {
+                        width: 4%;
+                    }
+
+                    .pfRec .printFormTbl .w5p {
+                        width: 5%;
+                    }
+
+                    .pfRec .printFormTbl .w9p {
+                        width: 9%;
+                    }
+
+                    .pfRec .printFormTbl .w10p {
+                        width: 10%;
+                    }
+
+                    .pfRec .printFormTbl .w12p {
+                        width: 12%;
+                    }
+
+                    .pfRec .printFormTbl .w15p {
+                        width: 15%;
+                    }
+
+                    .pfRec .printFormTbl .w20p {
+                        width: 20%;
+                    }
+
+                    .pfRec .printFormTbl td {
+                        width: 100%;
+                        padding: 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: black;
+                        word-break: break-word;
+                        overflow-wrap: break-word;
+                    }
+
+                    .pfRec .mb20 {
+                        margin-bottom: 20px;
+                    }
+
+                    .pfRec .mt30 {
+                        margin-top: 30px;
+                    }
+
+                    .pfRec .table-centred-data td {
+                        text-align: center;
+                    }
+
+                    .pfRec .table-centred-data tbody {
+                        vertical-align: top;
+                    }
+
+                    .pfRec .table-centred-data .left {
+                        text-align: left;
+                    }
+
+                    .pfRec .title-description {
+                        font-size: 13px;
+                    }
+
+                    .pfRec .hm10 {
+                        margin: 0 10px;
+                    }
+
+                    .pfRec td.stamp {
+                        border: solid 2px;
+                        border-radius: 10px;
+                        padding: 10px 10px 10px 10px;
+                    }
+
+                    .pfRec td.align-right {
+                        text-align: right;
+                        padding-right: 8px;
+                    }
+
+                    .pfRec td.no-border {
+                        border: 0;
+                    }
+
+                    .pfRec p.text-center {
+                        text-align: center;
+                    }
+
+                    .pfRec .gray-text {
+                        color: gray;
+                    }
+
+                    .pfRec .tab {
+                        padding-left: 15px !important;
+                    }
+
+                    .pfRec .mt10 {
+                        margin-top: 10px;
+                    }
+
+                    .pfRec .span_text_3pt {
+                        padding: 3px 0 0 0;
+                    }
+
+                    .pfRec .span-draft-text {
+                        font-size: 14px;
+                        display: block;
+                        text-align: center;
+                    }
+
+                    .pfRec .header-container {
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                        height: 110px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .pfRec .header-title {
+                        font-weight: bold;
+                        font-size: 14px;
+                        text-align: center;
+                        flex: 1;
+                    }
+
+                    .pfRec .header-qr-code-container {
+                        text-align: right;
+                    }
+
+                    .pfRec .header-qr-code-info-text {
+                        display: block;
+                        text-align: center
+                    }
+
+                    .pfRec .printFormTbl td {
+                        word-break: break-word;
+                    }
+
+                    .pfRec .printFormTbl .drug-additional-info-table_po-number-col {
+                        width: 100px;
+                    }
+
+                    .pfRec .printFormTbl .drug-additional-info_table {
+                        display: table;
+                        width: 100%;
+                    }
+
+                    .pfRec .printFormTbl .drug-additional-info_table .info-row {
+                        display: table-row;
+                    }
+
+                    .pfRec .printFormTbl .drug-additional-info_table .info-cell {
+                        display: table-cell;
+                        text-align: left;
+                        padding: 0 3px 5px 0;
+                    }
+
+                    .pfRec .printFormTbl .drug-additional-info_table .info-cell_header {
+                        width: 25%;
+                    }
+                </style>
+    </head>
+    <body>
+        <div class="pfRec">
+            <div class="container">
+                <div class="header-container">
+                    <div class="header-title">
+                                Электронный контракт, сформированный с использованием ЕИС
+                            </div>
+                    <div class="header-qr-code-container">
+                        <div>
+                            <span class="header-qr-code-info-text"> Версия 1 ревизия 1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="110px" stroke="none" version="1.1" viewbox="20 20 41 41" width="110px">
+                                <rect fill="#FFFFFF" height="100%" width="100%"/>
+                                <path d="M20,20h1v1h-1z M21,20h1v1h-1z M22,20h1v1h-1z M23,20h1v1h-1z M24,20h1v1h-1z M25,20h1v1h-1z M26,20h1v1h-1z M28,20h1v1h-1z M29,20h1v1h-1z M31,20h1v1h-1z M34,20h1v1h-1z M37,20h1v1h-1z M40,20h1v1h-1z M41,20h1v1h-1z M43,20h1v1h-1z M47,20h1v1h-1z M48,20h1v1h-1z M49,20h1v1h-1z M51,20h1v1h-1z M52,20h1v1h-1z M54,20h1v1h-1z M55,20h1v1h-1z M56,20h1v1h-1z M57,20h1v1h-1z M58,20h1v1h-1z M59,20h1v1h-1z M60,20h1v1h-1z M20,21h1v1h-1z M26,21h1v1h-1z M33,21h1v1h-1z M34,21h1v1h-1z M39,21h1v1h-1z M40,21h1v1h-1z M41,21h1v1h-1z M44,21h1v1h-1z M45,21h1v1h-1z M47,21h1v1h-1z M50,21h1v1h-1z M51,21h1v1h-1z M54,21h1v1h-1z M60,21h1v1h-1z M20,22h1v1h-1z M22,22h1v1h-1z M23,22h1v1h-1z M24,22h1v1h-1z M26,22h1v1h-1z M29,22h1v1h-1z M31,22h1v1h-1z M32,22h1v1h-1z M33,22h1v1h-1z M35,22h1v1h-1z M37,22h1v1h-1z M38,22h1v1h-1z M39,22h1v1h-1z M40,22h1v1h-1z M41,22h1v1h-1z M43,22h1v1h-1z M44,22h1v1h-1z M48,22h1v1h-1z M49,22h1v1h-1z M50,22h1v1h-1z M52,22h1v1h-1z M54,22h1v1h-1z M56,22h1v1h-1z M57,22h1v1h-1z M58,22h1v1h-1z M60,22h1v1h-1z M20,23h1v1h-1z M22,23h1v1h-1z M23,23h1v1h-1z M24,23h1v1h-1z M26,23h1v1h-1z M28,23h1v1h-1z M29,23h1v1h-1z M31,23h1v1h-1z M36,23h1v1h-1z M37,23h1v1h-1z M40,23h1v1h-1z M42,23h1v1h-1z M44,23h1v1h-1z M45,23h1v1h-1z M48,23h1v1h-1z M49,23h1v1h-1z M50,23h1v1h-1z M52,23h1v1h-1z M54,23h1v1h-1z M56,23h1v1h-1z M57,23h1v1h-1z M58,23h1v1h-1z M60,23h1v1h-1z M20,24h1v1h-1z M22,24h1v1h-1z M23,24h1v1h-1z M24,24h1v1h-1z M26,24h1v1h-1z M31,24h1v1h-1z M33,24h1v1h-1z M34,24h1v1h-1z M36,24h1v1h-1z M38,24h1v1h-1z M39,24h1v1h-1z M41,24h1v1h-1z M42,24h1v1h-1z M43,24h1v1h-1z M44,24h1v1h-1z M45,24h1v1h-1z M47,24h1v1h-1z M48,24h1v1h-1z M49,24h1v1h-1z M50,24h1v1h-1z M51,24h1v1h-1z M52,24h1v1h-1z M54,24h1v1h-1z M56,24h1v1h-1z M57,24h1v1h-1z M58,24h1v1h-1z M60,24h1v1h-1z M20,25h1v1h-1z M26,25h1v1h-1z M31,25h1v1h-1z M32,25h1v1h-1z M33,25h1v1h-1z M34,25h1v1h-1z M35,25h1v1h-1z M37,25h1v1h-1z M38,25h1v1h-1z M39,25h1v1h-1z M41,25h1v1h-1z M43,25h1v1h-1z M44,25h1v1h-1z M47,25h1v1h-1z M51,25h1v1h-1z M54,25h1v1h-1z M60,25h1v1h-1z M20,26h1v1h-1z M21,26h1v1h-1z M22,26h1v1h-1z M23,26h1v1h-1z M24,26h1v1h-1z M25,26h1v1h-1z M26,26h1v1h-1z M28,26h1v1h-1z M30,26h1v1h-1z M32,26h1v1h-1z M34,26h1v1h-1z M36,26h1v1h-1z M38,26h1v1h-1z M40,26h1v1h-1z M42,26h1v1h-1z M44,26h1v1h-1z M46,26h1v1h-1z M48,26h1v1h-1z M50,26h1v1h-1z M52,26h1v1h-1z M54,26h1v1h-1z M55,26h1v1h-1z M56,26h1v1h-1z M57,26h1v1h-1z M58,26h1v1h-1z M59,26h1v1h-1z M60,26h1v1h-1z M31,27h1v1h-1z M33,27h1v1h-1z M34,27h1v1h-1z M35,27h1v1h-1z M36,27h1v1h-1z M37,27h1v1h-1z M39,27h1v1h-1z M40,27h1v1h-1z M41,27h1v1h-1z M43,27h1v1h-1z M45,27h1v1h-1z M46,27h1v1h-1z M47,27h1v1h-1z M48,27h1v1h-1z M49,27h1v1h-1z M50,27h1v1h-1z M51,27h1v1h-1z M22,28h1v1h-1z M24,28h1v1h-1z M25,28h1v1h-1z M26,28h1v1h-1z M28,28h1v1h-1z M30,28h1v1h-1z M34,28h1v1h-1z M35,28h1v1h-1z M36,28h1v1h-1z M37,28h1v1h-1z M38,28h1v1h-1z M39,28h1v1h-1z M43,28h1v1h-1z M44,28h1v1h-1z M45,28h1v1h-1z M48,28h1v1h-1z M53,28h1v1h-1z M57,28h1v1h-1z M60,28h1v1h-1z M20,29h1v1h-1z M22,29h1v1h-1z M24,29h1v1h-1z M29,29h1v1h-1z M31,29h1v1h-1z M35,29h1v1h-1z M37,29h1v1h-1z M40,29h1v1h-1z M42,29h1v1h-1z M47,29h1v1h-1z M48,29h1v1h-1z M50,29h1v1h-1z M53,29h1v1h-1z M57,29h1v1h-1z M60,29h1v1h-1z M20,30h1v1h-1z M23,30h1v1h-1z M25,30h1v1h-1z M26,30h1v1h-1z M27,30h1v1h-1z M28,30h1v1h-1z M29,30h1v1h-1z M30,30h1v1h-1z M31,30h1v1h-1z M32,30h1v1h-1z M34,30h1v1h-1z M36,30h1v1h-1z M38,30h1v1h-1z M39,30h1v1h-1z M40,30h1v1h-1z M43,30h1v1h-1z M50,30h1v1h-1z M53,30h1v1h-1z M56,30h1v1h-1z M57,30h1v1h-1z M58,30h1v1h-1z M60,30h1v1h-1z M20,31h1v1h-1z M21,31h1v1h-1z M25,31h1v1h-1z M29,31h1v1h-1z M30,31h1v1h-1z M32,31h1v1h-1z M34,31h1v1h-1z M35,31h1v1h-1z M36,31h1v1h-1z M37,31h1v1h-1z M40,31h1v1h-1z M41,31h1v1h-1z M42,31h1v1h-1z M47,31h1v1h-1z M49,31h1v1h-1z M51,31h1v1h-1z M53,31h1v1h-1z M54,31h1v1h-1z M55,31h1v1h-1z M20,32h1v1h-1z M22,32h1v1h-1z M24,32h1v1h-1z M25,32h1v1h-1z M26,32h1v1h-1z M27,32h1v1h-1z M28,32h1v1h-1z M29,32h1v1h-1z M30,32h1v1h-1z M32,32h1v1h-1z M33,32h1v1h-1z M36,32h1v1h-1z M39,32h1v1h-1z M40,32h1v1h-1z M41,32h1v1h-1z M42,32h1v1h-1z M47,32h1v1h-1z M48,32h1v1h-1z M49,32h1v1h-1z M50,32h1v1h-1z M53,32h1v1h-1z M56,32h1v1h-1z M57,32h1v1h-1z M58,32h1v1h-1z M20,33h1v1h-1z M22,33h1v1h-1z M30,33h1v1h-1z M31,33h1v1h-1z M32,33h1v1h-1z M34,33h1v1h-1z M37,33h1v1h-1z M38,33h1v1h-1z M40,33h1v1h-1z M41,33h1v1h-1z M43,33h1v1h-1z M45,33h1v1h-1z M47,33h1v1h-1z M48,33h1v1h-1z M49,33h1v1h-1z M50,33h1v1h-1z M51,33h1v1h-1z M53,33h1v1h-1z M57,33h1v1h-1z M58,33h1v1h-1z M60,33h1v1h-1z M21,34h1v1h-1z M22,34h1v1h-1z M23,34h1v1h-1z M24,34h1v1h-1z M25,34h1v1h-1z M26,34h1v1h-1z M27,34h1v1h-1z M28,34h1v1h-1z M29,34h1v1h-1z M30,34h1v1h-1z M31,34h1v1h-1z M32,34h1v1h-1z M34,34h1v1h-1z M35,34h1v1h-1z M39,34h1v1h-1z M41,34h1v1h-1z M44,34h1v1h-1z M45,34h1v1h-1z M47,34h1v1h-1z M48,34h1v1h-1z M50,34h1v1h-1z M54,34h1v1h-1z M57,34h1v1h-1z M58,34h1v1h-1z M60,34h1v1h-1z M20,35h1v1h-1z M21,35h1v1h-1z M22,35h1v1h-1z M23,35h1v1h-1z M30,35h1v1h-1z M32,35h1v1h-1z M37,35h1v1h-1z M39,35h1v1h-1z M40,35h1v1h-1z M42,35h1v1h-1z M44,35h1v1h-1z M45,35h1v1h-1z M46,35h1v1h-1z M48,35h1v1h-1z M49,35h1v1h-1z M51,35h1v1h-1z M53,35h1v1h-1z M55,35h1v1h-1z M57,35h1v1h-1z M60,35h1v1h-1z M20,36h1v1h-1z M21,36h1v1h-1z M22,36h1v1h-1z M24,36h1v1h-1z M26,36h1v1h-1z M27,36h1v1h-1z M30,36h1v1h-1z M31,36h1v1h-1z M32,36h1v1h-1z M36,36h1v1h-1z M37,36h1v1h-1z M40,36h1v1h-1z M44,36h1v1h-1z M45,36h1v1h-1z M46,36h1v1h-1z M47,36h1v1h-1z M49,36h1v1h-1z M50,36h1v1h-1z M53,36h1v1h-1z M54,36h1v1h-1z M55,36h1v1h-1z M56,36h1v1h-1z M57,36h1v1h-1z M60,36h1v1h-1z M23,37h1v1h-1z M24,37h1v1h-1z M25,37h1v1h-1z M27,37h1v1h-1z M28,37h1v1h-1z M29,37h1v1h-1z M31,37h1v1h-1z M33,37h1v1h-1z M35,37h1v1h-1z M36,37h1v1h-1z M37,37h1v1h-1z M39,37h1v1h-1z M40,37h1v1h-1z M44,37h1v1h-1z M45,37h1v1h-1z M46,37h1v1h-1z M49,37h1v1h-1z M50,37h1v1h-1z M53,37h1v1h-1z M57,37h1v1h-1z M60,37h1v1h-1z M20,38h1v1h-1z M22,38h1v1h-1z M23,38h1v1h-1z M24,38h1v1h-1z M25,38h1v1h-1z M26,38h1v1h-1z M27,38h1v1h-1z M28,38h1v1h-1z M30,38h1v1h-1z M31,38h1v1h-1z M32,38h1v1h-1z M33,38h1v1h-1z M34,38h1v1h-1z M35,38h1v1h-1z M37,38h1v1h-1z M38,38h1v1h-1z M39,38h1v1h-1z M40,38h1v1h-1z M42,38h1v1h-1z M44,38h1v1h-1z M46,38h1v1h-1z M48,38h1v1h-1z M50,38h1v1h-1z M52,38h1v1h-1z M54,38h1v1h-1z M55,38h1v1h-1z M56,38h1v1h-1z M60,38h1v1h-1z M20,39h1v1h-1z M21,39h1v1h-1z M24,39h1v1h-1z M29,39h1v1h-1z M30,39h1v1h-1z M33,39h1v1h-1z M35,39h1v1h-1z M36,39h1v1h-1z M43,39h1v1h-1z M44,39h1v1h-1z M49,39h1v1h-1z M50,39h1v1h-1z M52,39h1v1h-1z M55,39h1v1h-1z M56,39h1v1h-1z M57,39h1v1h-1z M59,39h1v1h-1z M60,39h1v1h-1z M21,40h1v1h-1z M22,40h1v1h-1z M26,40h1v1h-1z M28,40h1v1h-1z M31,40h1v1h-1z M32,40h1v1h-1z M33,40h1v1h-1z M34,40h1v1h-1z M35,40h1v1h-1z M37,40h1v1h-1z M38,40h1v1h-1z M41,40h1v1h-1z M50,40h1v1h-1z M54,40h1v1h-1z M56,40h1v1h-1z M57,40h1v1h-1z M23,41h1v1h-1z M31,41h1v1h-1z M33,41h1v1h-1z M35,41h1v1h-1z M36,41h1v1h-1z M37,41h1v1h-1z M39,41h1v1h-1z M42,41h1v1h-1z M43,41h1v1h-1z M44,41h1v1h-1z M45,41h1v1h-1z M49,41h1v1h-1z M50,41h1v1h-1z M54,41h1v1h-1z M55,41h1v1h-1z M57,41h1v1h-1z M20,42h1v1h-1z M22,42h1v1h-1z M25,42h1v1h-1z M26,42h1v1h-1z M27,42h1v1h-1z M28,42h1v1h-1z M30,42h1v1h-1z M31,42h1v1h-1z M32,42h1v1h-1z M33,42h1v1h-1z M35,42h1v1h-1z M36,42h1v1h-1z M37,42h1v1h-1z M40,42h1v1h-1z M41,42h1v1h-1z M44,42h1v1h-1z M45,42h1v1h-1z M48,42h1v1h-1z M49,42h1v1h-1z M50,42h1v1h-1z M52,42h1v1h-1z M54,42h1v1h-1z M55,42h1v1h-1z M59,42h1v1h-1z M60,42h1v1h-1z M20,43h1v1h-1z M23,43h1v1h-1z M25,43h1v1h-1z M28,43h1v1h-1z M29,43h1v1h-1z M30,43h1v1h-1z M31,43h1v1h-1z M32,43h1v1h-1z M35,43h1v1h-1z M36,43h1v1h-1z M38,43h1v1h-1z M39,43h1v1h-1z M42,43h1v1h-1z M44,43h1v1h-1z M45,43h1v1h-1z M46,43h1v1h-1z M47,43h1v1h-1z M48,43h1v1h-1z M49,43h1v1h-1z M51,43h1v1h-1z M53,43h1v1h-1z M54,43h1v1h-1z M55,43h1v1h-1z M56,43h1v1h-1z M59,43h1v1h-1z M20,44h1v1h-1z M22,44h1v1h-1z M25,44h1v1h-1z M26,44h1v1h-1z M27,44h1v1h-1z M28,44h1v1h-1z M29,44h1v1h-1z M32,44h1v1h-1z M35,44h1v1h-1z M38,44h1v1h-1z M40,44h1v1h-1z M41,44h1v1h-1z M42,44h1v1h-1z M43,44h1v1h-1z M44,44h1v1h-1z M48,44h1v1h-1z M53,44h1v1h-1z M54,44h1v1h-1z M55,44h1v1h-1z M58,44h1v1h-1z M60,44h1v1h-1z M22,45h1v1h-1z M27,45h1v1h-1z M28,45h1v1h-1z M29,45h1v1h-1z M30,45h1v1h-1z M31,45h1v1h-1z M35,45h1v1h-1z M40,45h1v1h-1z M41,45h1v1h-1z M46,45h1v1h-1z M47,45h1v1h-1z M48,45h1v1h-1z M49,45h1v1h-1z M53,45h1v1h-1z M55,45h1v1h-1z M57,45h1v1h-1z M60,45h1v1h-1z M22,46h1v1h-1z M24,46h1v1h-1z M26,46h1v1h-1z M28,46h1v1h-1z M29,46h1v1h-1z M30,46h1v1h-1z M32,46h1v1h-1z M33,46h1v1h-1z M36,46h1v1h-1z M37,46h1v1h-1z M39,46h1v1h-1z M40,46h1v1h-1z M41,46h1v1h-1z M42,46h1v1h-1z M44,46h1v1h-1z M45,46h1v1h-1z M46,46h1v1h-1z M48,46h1v1h-1z M49,46h1v1h-1z M50,46h1v1h-1z M52,46h1v1h-1z M54,46h1v1h-1z M55,46h1v1h-1z M56,46h1v1h-1z M60,46h1v1h-1z M20,47h1v1h-1z M21,47h1v1h-1z M22,47h1v1h-1z M23,47h1v1h-1z M27,47h1v1h-1z M28,47h1v1h-1z M29,47h1v1h-1z M33,47h1v1h-1z M34,47h1v1h-1z M37,47h1v1h-1z M38,47h1v1h-1z M41,47h1v1h-1z M42,47h1v1h-1z M43,47h1v1h-1z M44,47h1v1h-1z M45,47h1v1h-1z M46,47h1v1h-1z M48,47h1v1h-1z M49,47h1v1h-1z M50,47h1v1h-1z M55,47h1v1h-1z M60,47h1v1h-1z M21,48h1v1h-1z M23,48h1v1h-1z M25,48h1v1h-1z M26,48h1v1h-1z M27,48h1v1h-1z M29,48h1v1h-1z M30,48h1v1h-1z M31,48h1v1h-1z M33,48h1v1h-1z M37,48h1v1h-1z M39,48h1v1h-1z M41,48h1v1h-1z M45,48h1v1h-1z M49,48h1v1h-1z M50,48h1v1h-1z M51,48h1v1h-1z M52,48h1v1h-1z M54,48h1v1h-1z M56,48h1v1h-1z M57,48h1v1h-1z M58,48h1v1h-1z M60,48h1v1h-1z M22,49h1v1h-1z M23,49h1v1h-1z M24,49h1v1h-1z M25,49h1v1h-1z M27,49h1v1h-1z M28,49h1v1h-1z M29,49h1v1h-1z M33,49h1v1h-1z M37,49h1v1h-1z M39,49h1v1h-1z M40,49h1v1h-1z M42,49h1v1h-1z M43,49h1v1h-1z M44,49h1v1h-1z M46,49h1v1h-1z M47,49h1v1h-1z M50,49h1v1h-1z M51,49h1v1h-1z M52,49h1v1h-1z M57,49h1v1h-1z M60,49h1v1h-1z M20,50h1v1h-1z M23,50h1v1h-1z M24,50h1v1h-1z M26,50h1v1h-1z M27,50h1v1h-1z M28,50h1v1h-1z M36,50h1v1h-1z M37,50h1v1h-1z M39,50h1v1h-1z M42,50h1v1h-1z M44,50h1v1h-1z M45,50h1v1h-1z M46,50h1v1h-1z M50,50h1v1h-1z M51,50h1v1h-1z M52,50h1v1h-1z M53,50h1v1h-1z M54,50h1v1h-1z M56,50h1v1h-1z M57,50h1v1h-1z M60,50h1v1h-1z M21,51h1v1h-1z M22,51h1v1h-1z M27,51h1v1h-1z M29,51h1v1h-1z M30,51h1v1h-1z M31,51h1v1h-1z M32,51h1v1h-1z M34,51h1v1h-1z M36,51h1v1h-1z M40,51h1v1h-1z M41,51h1v1h-1z M42,51h1v1h-1z M44,51h1v1h-1z M45,51h1v1h-1z M46,51h1v1h-1z M47,51h1v1h-1z M49,51h1v1h-1z M50,51h1v1h-1z M52,51h1v1h-1z M57,51h1v1h-1z M59,51h1v1h-1z M20,52h1v1h-1z M23,52h1v1h-1z M24,52h1v1h-1z M26,52h1v1h-1z M27,52h1v1h-1z M28,52h1v1h-1z M29,52h1v1h-1z M30,52h1v1h-1z M34,52h1v1h-1z M38,52h1v1h-1z M39,52h1v1h-1z M40,52h1v1h-1z M43,52h1v1h-1z M46,52h1v1h-1z M49,52h1v1h-1z M50,52h1v1h-1z M51,52h1v1h-1z M52,52h1v1h-1z M53,52h1v1h-1z M54,52h1v1h-1z M55,52h1v1h-1z M56,52h1v1h-1z M57,52h1v1h-1z M60,52h1v1h-1z M28,53h1v1h-1z M29,53h1v1h-1z M31,53h1v1h-1z M33,53h1v1h-1z M35,53h1v1h-1z M36,53h1v1h-1z M37,53h1v1h-1z M38,53h1v1h-1z M39,53h1v1h-1z M42,53h1v1h-1z M43,53h1v1h-1z M45,53h1v1h-1z M46,53h1v1h-1z M50,53h1v1h-1z M52,53h1v1h-1z M56,53h1v1h-1z M57,53h1v1h-1z M58,53h1v1h-1z M60,53h1v1h-1z M20,54h1v1h-1z M21,54h1v1h-1z M22,54h1v1h-1z M23,54h1v1h-1z M24,54h1v1h-1z M25,54h1v1h-1z M26,54h1v1h-1z M29,54h1v1h-1z M30,54h1v1h-1z M32,54h1v1h-1z M34,54h1v1h-1z M40,54h1v1h-1z M44,54h1v1h-1z M45,54h1v1h-1z M48,54h1v1h-1z M49,54h1v1h-1z M51,54h1v1h-1z M52,54h1v1h-1z M54,54h1v1h-1z M56,54h1v1h-1z M57,54h1v1h-1z M58,54h1v1h-1z M60,54h1v1h-1z M20,55h1v1h-1z M26,55h1v1h-1z M28,55h1v1h-1z M29,55h1v1h-1z M30,55h1v1h-1z M37,55h1v1h-1z M38,55h1v1h-1z M39,55h1v1h-1z M40,55h1v1h-1z M41,55h1v1h-1z M43,55h1v1h-1z M45,55h1v1h-1z M46,55h1v1h-1z M47,55h1v1h-1z M51,55h1v1h-1z M52,55h1v1h-1z M56,55h1v1h-1z M59,55h1v1h-1z M20,56h1v1h-1z M22,56h1v1h-1z M23,56h1v1h-1z M24,56h1v1h-1z M26,56h1v1h-1z M28,56h1v1h-1z M29,56h1v1h-1z M30,56h1v1h-1z M33,56h1v1h-1z M34,56h1v1h-1z M35,56h1v1h-1z M40,56h1v1h-1z M44,56h1v1h-1z M45,56h1v1h-1z M47,56h1v1h-1z M52,56h1v1h-1z M53,56h1v1h-1z M54,56h1v1h-1z M55,56h1v1h-1z M56,56h1v1h-1z M58,56h1v1h-1z M59,56h1v1h-1z M60,56h1v1h-1z M20,57h1v1h-1z M22,57h1v1h-1z M23,57h1v1h-1z M24,57h1v1h-1z M26,57h1v1h-1z M31,57h1v1h-1z M34,57h1v1h-1z M35,57h1v1h-1z M36,57h1v1h-1z M37,57h1v1h-1z M38,57h1v1h-1z M39,57h1v1h-1z M40,57h1v1h-1z M42,57h1v1h-1z M46,57h1v1h-1z M49,57h1v1h-1z M52,57h1v1h-1z M53,57h1v1h-1z M57,57h1v1h-1z M60,57h1v1h-1z M20,58h1v1h-1z M22,58h1v1h-1z M23,58h1v1h-1z M24,58h1v1h-1z M26,58h1v1h-1z M28,58h1v1h-1z M30,58h1v1h-1z M32,58h1v1h-1z M34,58h1v1h-1z M39,58h1v1h-1z M44,58h1v1h-1z M45,58h1v1h-1z M46,58h1v1h-1z M48,58h1v1h-1z M52,58h1v1h-1z M53,58h1v1h-1z M55,58h1v1h-1z M56,58h1v1h-1z M60,58h1v1h-1z M20,59h1v1h-1z M26,59h1v1h-1z M29,59h1v1h-1z M31,59h1v1h-1z M34,59h1v1h-1z M35,59h1v1h-1z M37,59h1v1h-1z M38,59h1v1h-1z M39,59h1v1h-1z M40,59h1v1h-1z M43,59h1v1h-1z M45,59h1v1h-1z M46,59h1v1h-1z M47,59h1v1h-1z M49,59h1v1h-1z M50,59h1v1h-1z M52,59h1v1h-1z M53,59h1v1h-1z M54,59h1v1h-1z M55,59h1v1h-1z M57,59h1v1h-1z M59,59h1v1h-1z M20,60h1v1h-1z M21,60h1v1h-1z M22,60h1v1h-1z M23,60h1v1h-1z M24,60h1v1h-1z M25,60h1v1h-1z M26,60h1v1h-1z M29,60h1v1h-1z M31,60h1v1h-1z M32,60h1v1h-1z M34,60h1v1h-1z M39,60h1v1h-1z M41,60h1v1h-1z M42,60h1v1h-1z M44,60h1v1h-1z M46,60h1v1h-1z M47,60h1v1h-1z M52,60h1v1h-1z M54,60h1v1h-1z M55,60h1v1h-1z M56,60h1v1h-1z M57,60h1v1h-1z M59,60h1v1h-1z M60,60h1v1h-1z" fill="#000000"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <main>
+                    <div class="block">
+                        <p class="block_title">1. Номер контракта</p>
+                        <table class="printFormTbl">
+                            <tr>
+                                <td>Номер контракта</td>
+                                <td>0328300010325000010 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                            Идентификатор государственного контракта по государственному оборонному заказу
+                                        </td>
+                                <td/>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="block">
+                        <p class="block_title">2. Стороны контракта</p>
+                        <div class="sub-block">
+                            <p class="sub-block_title">2.1. Информация о заказчике</p>
+                            <table class="printFormTbl">
+                                <tr>
+                                    <td>Полное наименование заказчика</td>
+                                    <td>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ВЛАДИМИРСКОЙ ОБЛАСТИ "СУЗДАЛЬСКАЯ РАЙОННАЯ БОЛЬНИЦА"</td>
+                                </tr>
+                                <tr>
+                                    <td>Сокращенное наименование заказчика</td>
+                                    <td>ГБУЗ ВО "СУЗДАЛЬСКАЯ РБ"</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН</td>
+                                    <td>3310001948</td>
+                                </tr>
+                                <tr>
+                                    <td>КПП</td>
+                                    <td>331001001</td>
+                                </tr>
+                                <tr>
+                                    <td>Организационно-правовая форма</td>
+                                    <td>75203: Государственные бюджетные учреждения субъектов Российской Федерации</td>
+                                </tr>
+                                <tr>
+                                    <td>Место нахождения</td>
+                                    <td>Российская Федерация, 601291, Владимирская обл, Суздальский р-н, Суздаль г, Гоголя, Д.1</td>
+                                </tr>
+                                <tr>
+                                    <td>Почтовый адрес</td>
+                                    <td>Российская Федерация, 601291, Владимирская обл, Суздальский р-н, Суздаль г, Гоголя, Д.1</td>
+                                </tr>
+                                <tr>
+                                    <td>Ответственное должностное лицо заказчика</td>
+                                    <td>Тимкин Сергей Леонидович</td>
+                                </tr>
+                                <tr>
+                                    <td>Адрес электронной почты</td>
+                                    <td>root@crb.souzdal.elcom.ru</td>
+                                </tr>
+                                <tr>
+                                    <td>Номер контактного телефона</td>
+                                    <td>7-492-31-24211</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">2.2. Информация о поставщике</p>
+                            <table class="printFormTbl">
+                                <tr>
+                                    <td>Вид</td>
+                                    <td>Юридическое лицо РФ</td>
+                                </tr>
+                                <tr>
+                                    <td>Наименование организации (ФИО физического лица)</td>
+                                    <td>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛАБМЕД" (ООО "ЛАБМЕД")</td>
+                                </tr>
+                                <tr>
+                                    <td>Наименование страны, код по ОКСМ</td>
+                                    <td>Российская Федерация (643)</td>
+                                </tr>
+                                <tr>
+                                    <td>Адрес места нахождения (адрес места жительства)</td>
+                                    <td>600022, ОБЛАСТЬ ВЛАДИМИРСКАЯ, Г. ВЛАДИМИР, УЛ. КРАЙНОВА, Д.4</td>
+                                </tr>
+                                <tr>
+                                    <td>Почтовый адрес</td>
+                                    <td>600022, Российская Федерация, Владимирская область, Владимир, Крайнова ул, 4, Квартира (офис) 2</td>
+                                </tr>
+                                <tr>
+                                    <td>ОГРН (для юридических лиц)</td>
+                                    <td>1033301821904</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН</td>
+                                    <td>3327330299</td>
+                                </tr>
+                                <tr>
+                                    <td>КПП (для юридических лиц)</td>
+                                    <td>332701001</td>
+                                </tr>
+                                <tr>
+                                    <td>Статус</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>Электронная почта</td>
+                                    <td>labmed@bk.ru</td>
+                                </tr>
+                                <tr>
+                                    <td>Телефон</td>
+                                    <td>7 9107797411 444771</td>
+                                </tr>
+                            </table>
+                            <table class="printFormTbl mt10">
+                                <tr>
+                                    <td colspan="2" rowspan="3">Руководитель (лицо, имеющее право без доверенности действовать от имени юридического лица)</td>
+                                    <td colspan="3">ФЕДОСЕЕВ АЛЕКСАНДР ЕВГЕНЬЕВИЧ</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН</td>
+                                    <td colspan="2">332702079316</td>
+                                </tr>
+                                <tr>
+                                    <td>Должность</td>
+                                    <td colspan="2">ДИРЕКТОР</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">2.3. Основание заключения контракта</p>
+                            <table class="printFormTbl">
+                                <tr>
+                                    <td>Способ определения поставщика (подрядчика, исполнителя)</td>
+                                    <td>Закупка, осуществляемая в соответствии с частью 12 статьи 93 Закона № 44-ФЗ</td>
+                                </tr>
+                                <tr>
+                                    <td>Идентификационный код закупки</td>
+                                    <td>252331000194833100100100670010000244</td>
+                                </tr>
+                                <tr>
+                                    <td>Номер извещения об осуществлении закупки (приглашения)</td>
+                                    <td colspan="2">0328300010325000010</td>
+                                </tr>
+                                <tr>
+                                    <td>Реквизиты документа, подтверждающего основание заключения
+                                                    контракта
+                                                </td>
+                                    <td colspan="2">Протокол подведения итогов определения поставщика № ИЗТ1 от 25.04.2025</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <p class="block_title">3. Предмет контракта</p>
+                        <table class="printFormTbl">
+                            <tr>
+                                <td>Предмет контракта</td>
+                                <td>С-реактивный белок (СРБ) ИВД, калибратор</td>
+                            </tr>
+                            <tr>
+                                <td>Специализация</td>
+                                <td>Нет</td>
+                            </tr>
+                            <tr>
+                                <td>Контракт заключен для выполнения государственного оборонного заказа</td>
+                                <td>Нет</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                            Контракт жизненного цикла (в соответствии с частью 16 статьи 34 Федерального
+                                            закона 44-ФЗ)
+                                        </td>
+                                <td>Нет</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                            Невозможно определить количество (объем) закупаемых товаров, работ, услуг
+                                        </td>
+                                <td>Нет</td>
+                            </tr>
+                        </table>
+                        <div class="sub-block">
+                            <p class="sub-block_title">3.1. Объект закупки</p>
+                            <table class="printFormTbl table-centred-data">
+                                <thead>
+                                    <td class="w4p">№п/п</td>
+                                    <td class="w20p">
+                    Наименование объекта закупки, товарный знак, знаки
+                    обслуживания,
+                    фирменные наименования, патенты, полезные модели, промышленные образцы
+                </td>
+                                    <td class="w9p">Тип объекта закупки</td>
+                                    <td class="w15p">Позиции по КТРУ, ОКПД2</td>
+                                    <td class="w15p">
+                    Количество (объем) и единица измерения товара, работы,
+                    услуги
+                </td>
+                                    <td class="w10p">
+                    Цена за единицу (в валюте контракта)
+                </td>
+                                    <td class="w5p">Ставка НДС</td>
+                                    <td class="w12p">
+                    Страна происхождения товара
+                </td>
+                                    <td class="w10p">
+                    Сумма (в валюте контракта)
+                </td>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="3">1</td>
+                                        <td>
+                                            С-реактивный белок (СРБ) ИВД, калибратор
+                                            <div style="margin-top: 3pt;">(объект закупки является медицинским изделием, код НКМИ: 116240: С-реактивный белок (СРБ) ИВД, калибратор)</div>
+                                            <div style="margin-top: 3pt;"/>
+                                            <div style="margin-top: 3pt;"/>
+                                        </td>
+                                        <td>Товар</td>
+                                        <td>С-реактивный белок (СРБ) ИВД, калибратор (21.20.23.110-00002741), Реагенты диагностические (21.20.23.110)</td>
+                                        <td>1 Набор (набор)</td>
+                                        <td>24 387.00</td>
+                                        <td>Без НДС</td>
+                                        <td>Российская Федерация (643)</td>
+                                        <td>24 387.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="100" style="text-align: center; border-bottom: none;">
+                                                                Характеристики объекта закупки
+                                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="100" style="text-align: left; border-top: none;">
+                                            <div style="margin-bottom: 3px;">
+                                                <span style="text-decoration: underline">Назначение</span>
+                                                :
+                Для анализаторов открытого типа;
+                                            </div>
+                                            <div style="margin-bottom: 3px;">
+                                                <span style="text-decoration: underline">Объем реагента</span>
+                                                :
+                ≥  10 Кубический сантиметр;^миллилитр;
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="8" style="border: none !important; text-align: right;">
+                                                        Итого:
+                                                    </td>
+                                        <td>24 387.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <p class="block_title">4. Условия контракта</p>
+                        <div class="sub-block">
+                            <p class="sub-block_title">4.1. Сроки исполнения контракта</p>
+                            <table class="printFormTbl">
+                                <tr>
+                                    <td>Дата начала исполнения контракта</td>
+                                    <td>с даты заключения контракта</td>
+                                </tr>
+                                <tr>
+                                    <td>Дата окончания исполнения контракта (срок исполнения
+                                                        контракта)
+                                                    </td>
+                                    <td>30.06.2025</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">4.2. Этапы исполнения контракта</p>
+                            <p>Контракт не разделен на этапы исполнения контракта</p>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">
+                                        4.3. Место поставки товара, выполнения работы или оказания услуги
+                                    </p>
+                            <table class="printFormTbl table-centred-data">
+                                <thead>
+                                    <tr>
+                                        <td>Страна</td>
+                                        <td>Адрес</td>
+                                        <td>Дополнительная информация об адресе</td>
+                                        <td>Код ОКТМО</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Российская Федерация</td>
+                                        <td>обл Владимирская, м.р-н Суздальский, г.п. город Суздаль, г Суздаль, ул Гоголя, д. 1</td>
+                                        <td/>
+                                        <td>17654101001: г Суздаль</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">4.4. Требования к гарантии качества товара, работы,
+                                        услуги
+                                    </p>
+                            <table class="printFormTbl mb20">
+                                <tr>
+                                    <td>Требуется гарантия качества товара, работы, услуги</td>
+                                    <td>Да</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab">Информация о требованиях к гарантийному обслуживанию
+                                                товара
+                                            </td>
+                                    <td>В соответствии с разделом 6 Контракта.</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab">Требования к гарантии производителя товара</td>
+                                    <td>В соответствии с разделом 6 Контракта.</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab">
+                                                Срок, на который предоставляется гарантия и (или) требования
+                                                к объему предоставления гарантий качества товара, работы, услуги
+                                            </td>
+                                    <td>В соответствии с разделом 6 Контракта. Срок предоставления гарантии качества – в течение действия контракта.  Объем гарантии качества 100%. Остаточный срок годности товара на момент поставки составляет не менее 18 месяцев.</td>
+                                </tr>
+                                <tr>
+                                    <td>Требуется обеспечение исполнения обязательств по предоставленной
+                                                гарантии
+                                                качества
+                                                товаров, работ, услуг
+                                            </td>
+                                    <td>Нет</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">4.5. Обеспечение исполнения контракта
+                                        (гарантийных обязательств)
+                                    </p>
+                            <table class="printFormTbl table-centred-data">
+                                <thead>
+                                    <tr>
+                                        <td>Вид обеспечения</td>
+                                        <td>Размер обеспечения исполнения контракта в %</td>
+                                        <td>Размер обеспечения исполнения контракта, который должен предоставить
+                                                поставщик
+                                            </td>
+                                        <td>Порядок предоставления, требования к обеспечению</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Обеспечение исполнения контракта</td>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                    </tr>
+                                    <tr>
+                                        <td>Обеспечение исполнения контракта по поставке товара или выполнению
+                                                    работы
+                                                </td>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                                    Обеспечение исполнения контракта по последующему обслуживанию,
+                                                    эксплуатации
+                                                    (при
+                                                    наличии) в течение срока службы, ремонту и (или) утилизации
+                                                    поставленного
+                                                    товара
+                                                    или
+                                                    созданного в результате выполнения работы объекта капитального
+                                                    строительства
+                                                    или
+                                                    товара
+                                                </td>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                                    Обеспечение исполнения обязательств по предоставленной гарантии качества
+                                                    товаров,
+                                                    работ, услуг
+                                                </td>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">4.6. Условия привлечения субподрядчиков,
+                                            соисполнителей из
+                                            числа
+                                            СМП, СОНО
+                                        </p>
+                            <table class="printFormTbl">
+                                <tr>
+                                    <td>
+                                        <div>
+                                                        Предъявляется требование о привлечении к исполнению контракта
+                                                        субподрядчиков,
+                                                        соисполнителей из числа субъектов малого предпринимательства,
+                                                        социально
+                                                        ориентированных
+                                                        некоммерческих организаций в соответствии с ч. 5 ст. 30 Закона №
+                                                        44
+                                                        ФЗ
+                                                    </div>
+                                        <div style="margin-top: 3pt;">
+                                                        Если поставщик является субъектом малого предпринимательства,
+                                                        социально
+                                                        ориентированной некоммерческой организацией, то требование о
+                                                        привлечении
+                                                        к исполнению контракта субподрядчиков, соисполнителей из числа
+                                                        СМП/СОНО к
+                                                        такому
+                                                        поставщику не предъявляется
+                                                    </div>
+                                    </td>
+                                    <td>Нет</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                                    Объем привлечения к исполнению контракта субподрядчиков,
+                                                    соисполнителей
+                                                    из
+                                                    числа СМП, СОНО (%)
+                                                </td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>
+                                                    За неисполнение условий по привлечению к исполнению контракта
+                                                    субподрядчиков,
+                                                    соисполнителей из числа СМП/СОНО предусмотрена гражданско-правовая
+                                                    ответственность
+                                                    поставщика (подрядчика, исполнителя)
+                                                </td>
+                                    <td/>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">4.7. Прочие условия контракта</p>
+                            <table class="printFormTbl">
+                                <tr>
+                                    <td>Предусмотрена возможность одностороннего отказа от исполнения контракта
+                                                в
+                                                соответствии со ст. 95 Закона № 44-ФЗ
+                                            </td>
+                                    <td>Да</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <p class="block_title">5. Финансирование контракта</p>
+                        <div class="sub-block">
+                            <p class="sub-block_title">5.1. Источники финансирования</p>
+                            <table class="printFormTbl">
+                                <tr>
+                                    <td>Наименование бюджета</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>Вид бюджета</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>Код территории муниципального образования</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>Закупка за счет собственных средств организации</td>
+                                    <td>Да</td>
+                                </tr>
+                                <tr>
+                                    <td>Информация о банковском и (или) казначейском сопровождении контракта
+                                            </td>
+                                    <td>Банковское или казначейское сопровождение контракта не требуется</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">5.2. Цена контракта</p>
+                            <table class="printFormTbl">
+                                <tr>
+                                    <td>Способ указания цены контракта</td>
+                                    <td>Цена контракта</td>
+                                </tr>
+                                <tr>
+                                    <td>Цена контракта</td>
+                                    <td>24387.00</td>
+                                </tr>
+                                <tr>
+                                    <td>В том числе НДС</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>В том числе сумма казначейского обеспечения обязательств</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>Формула цены контракта</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>Валюта контракта</td>
+                                    <td>РОССИЙСКИЙ РУБЛЬ</td>
+                                </tr>
+                                <tr>
+                                    <td>Цена за право заключения контракта</td>
+                                    <td/>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">5.3. Порядок расчетов</p>
+                            <table class="printFormTbl">
+                                <tr>
+                                    <td>Предусмотрена выплата аванса</td>
+                                    <td>Нет</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab">Размер аванса (%)</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td class="tab">Размер аванса в валюте контракта</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>
+                                                Суммы, уплачиваемые заказчиком поставщику (подрядчику, исполнителю)
+                                                будут
+                                                уменьшены на
+                                                размер налогов, сборов и иных обязательных платежей
+                                            </td>
+                                    <td>Да</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                                Предусмотрено удержание суммы неисполненных требований об уплате
+                                                неустоек
+                                                (штрафов, пеней) из суммы,
+                                                подлежащей оплате поставщику (подрядчику, исполнителю)
+                                            </td>
+                                    <td>Да</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">5.4. График платежей</p>
+                            <table class="printFormTbl table-centred-data mb20">
+                                <thead>
+                                    <tr>
+                                        <td rowspan="2">Код видов расходов</td>
+                                        <td rowspan="2">Код поступления</td>
+                                        <td colspan="1">Сумма контракта (в валюте контракта)</td>
+                                        <td rowspan="2">Аванс</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                                            на 
+                                                            2025
+                                                             год
+                                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>244</td>
+                                        <td/>
+                                        <td>24 387.00</td>
+                                        <td>Нет</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-right no-border" colspan="2">Итого</td>
+                                        <td>24 387.00</td>
+                                        <td> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">5.5. Реквизиты счета заказчика</p>
+                            <table class="printFormTbl table-centred-data">
+                                <thead>
+                                    <tr>
+                                        <td>Наименование организации, ИНН, КПП</td>
+                                        <td>Тип счета</td>
+                                        <td>Номер лицевого счета</td>
+                                        <td>Номер банковского (казначейского) счета</td>
+                                        <td>Реквизиты банка, ТОФК</td>
+                                        <td>Наименование контрагента для п/п</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="left" rowspan="3">ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ВЛАДИМИРСКОЙ ОБЛАСТИ "СУЗДАЛЬСКАЯ РАЙОННАЯ БОЛЬНИЦА"
+            ИНН: 3310001948
+            КПП: 331001001</td>
+                                        <td>Лицевой счет в ФК</td>
+                                        <td>22286У73080</td>
+                                        <td>03224643170000002800</td>
+                                        <td class="left">
+                                            ОТДЕЛЕНИЕ ВЛАДИМИР БАНКА РОССИИ // УФК по Владимирской области, г. Владимир
+                                            <br/>
+                                            БИК: 011708377, к/с: 40102810945370000020
+                                        </td>
+                                        <td class="left"/>
+                                    </tr>
+                                    <tr>
+                                        <td>Лицевой счет в ФК</td>
+                                        <td>21286У73080</td>
+                                        <td>03224643170000002800</td>
+                                        <td class="left">
+                                            ОТДЕЛЕНИЕ ВЛАДИМИР БАНКА РОССИИ // УФК по Владимирской области, г. Владимир
+                                            <br/>
+                                            БИК: 011708377, к/с: 40102810945370000020
+                                        </td>
+                                        <td class="left"/>
+                                    </tr>
+                                    <tr>
+                                        <td>Лицевой счет в ФК</td>
+                                        <td>20286У73080</td>
+                                        <td>03224643170000002800</td>
+                                        <td class="left">
+                                            ОТДЕЛЕНИЕ ВЛАДИМИР БАНКА РОССИИ // УФК по Владимирской области, г. Владимир
+                                            <br/>
+                                            БИК: 011708377, к/с: 40102810945370000020
+                                        </td>
+                                        <td class="left"/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="sub-block">
+                            <p class="sub-block_title">5.6. Реквизиты счета поставщика</p>
+                            <table class="printFormTbl table-centred-data">
+                                <thead>
+                                    <tr>
+                                        <td>Наименование организации / ФИО, ИНН, КПП</td>
+                                        <td>Тип счета</td>
+                                        <td>Номер лицевого счета/код поступления</td>
+                                        <td>Номер банковского (казначейского) счета</td>
+                                        <td>Реквизиты банка, ТОФК</td>
+                                        <td>Наименование контрагента для п/п, ОКТМО, КБК</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="left" rowspan="1">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛАБМЕД"
+            ИНН: 3327330299
+            КПП: 332701001</td>
+                                        <td>Расчетный счет в банке</td>
+                                        <td/>
+                                        <td>40702810610020102255</td>
+                                        <td class="left">
+                                            ВЛАДИМИРСКОЕ ОТДЕЛЕНИЕ №8611 ПАО СБЕРБАНК, г. Владимир
+                                            <br/>
+                                            БИК: 041708602, к/с: 30101810000000000602
+                                        </td>
+                                        <td class="left">ООО "ЛАБМЕД"</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <p class="block_title">6. Документы, сформированные без использования ЕИС</p>
+                        <table class="printFormTbl mb20">
+                            <tr>
+                                <td>Наименование файла</td>
+                            </tr>
+                            <tr>
+                                <td>1 Контаркт №0328300010325000010_ СРБ-калибратор для ДДС</td>
+                            </tr>
+                        </table>
+                        <table style="color: #4c99d0; border-spacing: 10px">
+                            <tr>
+                                <td class="stamp">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" id="Layer_1" style="enable-background:new -120 -120 700 750;" version="1.1" viewbox="-120 -120 700 750" width="20px" x="0px" xml:space="preserve" y="0px">
+<g>
+<path d="M361.205,68.899c-14.663,0-28.447,5.71-38.816,16.078c-21.402,21.403-21.402,56.228,0,77.631                               c10.368,10.368,24.153,16.078,38.815,16.078s28.447-5.71,38.816-16.078c21.402-21.403,21.402-56.228,0-77.631                               C389.652,74.609,375.867,68.899,361.205,68.899z M378.807,141.394c-4.702,4.702-10.953,7.292-17.603,7.292                               s-12.901-2.59-17.603-7.291c-9.706-9.706-9.706-25.499,0-35.205c4.702-4.702,10.953-7.291,17.603-7.291s12.9,2.589,17.603,7.291                               C388.513,115.896,388.513,131.688,378.807,141.394z" fill="grey"/>
+<path d="M441.961,43.036C414.21,15.284,377.311,0,338.064,0c-39.248,0-76.146,15.284-103.897,43.036                               c-42.226,42.226-54.491,105.179-32.065,159.698L0.254,404.584l-0.165,80.268l144.562,0.165v-55.722h55.705l0-55.705h55.705v-64.492                               l26.212-26.212c17.615,7.203,36.698,10.976,55.799,10.976c39.244,0,76.14-15.282,103.889-43.032                               C499.25,193.541,499.25,100.325,441.961,43.036z M420.748,229.617c-22.083,22.083-51.445,34.245-82.676,34.245                               c-18.133,0-36.237-4.265-52.353-12.333l-9.672-4.842l-49.986,49.985v46.918h-55.705l0,55.705h-55.705v55.688l-84.5-0.096                               l0.078-37.85L238.311,208.95l-4.842-9.672c-22.572-45.087-13.767-99.351,21.911-135.029C277.466,42.163,306.83,30,338.064,30                               c31.234,0,60.598,12.163,82.684,34.249C466.34,109.841,466.34,184.025,420.748,229.617z" fill="grey"/>
+<circle cx="230" cy="250" r="350" style="fill:none; stroke-width:30px; stroke:grey;"/>
+</g>
+</svg>
+                                                                Подпись поставщика
+
+                                    <br/>
+                                    <br/>
+                                            Владелец сертификата:
+
+                                    <br/>
+                                    <b>Федосеева Маргарита Сергеевна</b>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                            Сертификат:
+
+                                    <br/>
+                                    <b>04077c7000b5b212a14d0baeb1cd4bf99b</b>
+                                    <br/>
+                                            Действителен с 04.04.2025 по 04.04.2026
+                                    <br/>
+                                    <br/>
+                                            Дата и время подписания:
+
+                                    <br/>
+                                    <b>29.04.2025</b>
+                                    <br/>
+                                    11:25:34 ((МСК))
+                                </td>
+                                <td class="stamp">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" id="Layer_1" style="enable-background:new -120 -120 700 750;" version="1.1" viewbox="-120 -120 700 750" width="20px" x="0px" xml:space="preserve" y="0px">
+<g>
+<path d="M361.205,68.899c-14.663,0-28.447,5.71-38.816,16.078c-21.402,21.403-21.402,56.228,0,77.631                               c10.368,10.368,24.153,16.078,38.815,16.078s28.447-5.71,38.816-16.078c21.402-21.403,21.402-56.228,0-77.631                               C389.652,74.609,375.867,68.899,361.205,68.899z M378.807,141.394c-4.702,4.702-10.953,7.292-17.603,7.292                               s-12.901-2.59-17.603-7.291c-9.706-9.706-9.706-25.499,0-35.205c4.702-4.702,10.953-7.291,17.603-7.291s12.9,2.589,17.603,7.291                               C388.513,115.896,388.513,131.688,378.807,141.394z" fill="grey"/>
+<path d="M441.961,43.036C414.21,15.284,377.311,0,338.064,0c-39.248,0-76.146,15.284-103.897,43.036                               c-42.226,42.226-54.491,105.179-32.065,159.698L0.254,404.584l-0.165,80.268l144.562,0.165v-55.722h55.705l0-55.705h55.705v-64.492                               l26.212-26.212c17.615,7.203,36.698,10.976,55.799,10.976c39.244,0,76.14-15.282,103.889-43.032                               C499.25,193.541,499.25,100.325,441.961,43.036z M420.748,229.617c-22.083,22.083-51.445,34.245-82.676,34.245                               c-18.133,0-36.237-4.265-52.353-12.333l-9.672-4.842l-49.986,49.985v46.918h-55.705l0,55.705h-55.705v55.688l-84.5-0.096                               l0.078-37.85L238.311,208.95l-4.842-9.672c-22.572-45.087-13.767-99.351,21.911-135.029C277.466,42.163,306.83,30,338.064,30                               c31.234,0,60.598,12.163,82.684,34.249C466.34,109.841,466.34,184.025,420.748,229.617z" fill="grey"/>
+<circle cx="230" cy="250" r="350" style="fill:none; stroke-width:30px; stroke:grey;"/>
+</g>
+</svg>
+                                                                Подпись заказчика
+
+                                    <br/>
+                                    <br/>
+                                            Владелец сертификата:
+
+                                    <br/>
+                                    <b>Тимкин Сергей Леонидович</b>
+                                    <br/>
+                                    Главный врач
+                                    <br/>
+                                    ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ВЛАДИМИРСКОЙ ОБЛАСТИ "СУЗДАЛЬСКАЯ РАЙОННАЯ БОЛЬНИЦА"
+                                    <br/>
+                                    <br/>
+                                            Сертификат:
+
+                                    <br/>
+                                    <b>00ae9728baaf25e89fdf8a257e92a8d421</b>
+                                    <br/>
+                                            Действителен с 09.04.2025 по 03.07.2026
+                                    <br/>
+                                    <br/>
+                                            Дата и время подписания:
+
+                                    <br/>
+                                    <b>30.04.2025</b>
+                                    <br/>
+                                    08:12:38 ((МСК))
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

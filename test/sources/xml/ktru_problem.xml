@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns6:cpElectronicContract schemeVersion="14.3" xmlns="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/printform/1" xmlns:ns5="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/common/1" xmlns:ns4="http://zakupki.gov.ru/oos/types/1" xmlns:ns3="http://zakupki.gov.ru/oos/base/1">
+    <versionNumber>1</versionNumber>
+    <contractNumber>0127200000224007456/375</contractNumber>
+    <docType>1</docType>
+    <mainDocInfo>
+        <id>19766316</id>
+    </mainDocInfo>
+    <customerInfo>
+        <ns2:regNum>03272000398</ns2:regNum>
+        <ns2:consRegistryNum>152U0219</ns2:consRegistryNum>
+        <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "КЛИНЦОВСКАЯ ЦЕНТРАЛЬНАЯ ГОРОДСКАЯ БОЛЬНИЦА"</ns2:fullName>
+        <ns2:shortName>ГБУЗ "КЦГБ"</ns2:shortName>
+        <ns2:postAddress>243140, Брянская обл, г Клинцы, пр-кт Ленина, дом 58</ns2:postAddress>
+        <ns2:factAddress>Российская Федерация, 243140, Брянская обл, ПР-КТ ЛЕНИНА, Д. 58</ns2:factAddress>
+        <ns2:INN>3203003080</ns2:INN>
+        <ns2:KPP>324101001</ns2:KPP>
+        <OKOPFInfo>
+            <ns3:code>75203</ns3:code>
+            <ns3:singularName>Государственные бюджетные учреждения субъектов Российской Федерации</ns3:singularName>
+        </OKOPFInfo>
+        <contactPersonInfo>
+            <ns2:lastName>Иванова</ns2:lastName>
+            <ns2:firstName>Ирина</ns2:firstName>
+            <ns2:middleName>Александровна</ns2:middleName>
+        </contactPersonInfo>
+        <email>ks.kcgb32@yandex.ru</email>
+        <contactPhone>8-48336-52343</contactPhone>
+        <customerAccountsDetailsInfo>
+            <customerAccountDetailsInfo>
+                <ns2:sid>65739934</ns2:sid>
+                <ns2:externalSid>d0f83bc1-c77e-496c-973c-2c39e3c0c87b</ns2:externalSid>
+                <ns2:accountType>02</ns2:accountType>
+                <ns2:personalAccountNumber>22814Р09910</ns2:personalAccountNumber>
+                <ns2:creditOrgName>УФК по Брянской области</ns2:creditOrgName>
+                <ns2:detailsCreditOrgText>ОТДЕЛЕНИЕ БРЯНСК БАНКА РОССИИ // УФК по Брянской области, г. Брянск</ns2:detailsCreditOrgText>
+                <ns2:bankAccountNumber>03224643150000002701</ns2:bankAccountNumber>
+                <ns2:bik>011501101</ns2:bik>
+                <ns2:corrAccountNumber>40102810245370000019</ns2:corrAccountNumber>
+            </customerAccountDetailsInfo>
+        </customerAccountsDetailsInfo>
+    </customerInfo>
+    <participantInfo>
+        <legalEntityRFInfo>
+            <fullName>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЭКЗИТ МЕДИКАЛ"</fullName>
+            <shortName>ООО "ЭКЗИТ МЕДИКАЛ"</shortName>
+            <OGRN>1103256003553</OGRN>
+            <INN>3250518626</INN>
+            <KPP>325701001</KPP>
+            <factAddress>241001, БРЯНСКАЯ ОБЛАСТЬ, г.о. ГОРОД БРЯНСК, Г БРЯНСК, ПЕР ПИЛОТОВ, Д. 20</factAddress>
+            <postAddress>241001, г.Брянск, пер Пилотов 20</postAddress>
+            <email>unymed@yandex.ru</email>
+            <contactPhone>7 9003581777</contactPhone>
+            <informationPersonsInfo>
+                <informationPersonInfo>
+                    <nameInfo>
+                        <ns2:lastName>ТАШМАТОВА</ns2:lastName>
+                        <ns2:firstName>ЛИЛИЯ</ns2:firstName>
+                        <ns2:middleName>СЕРГЕЕВНА</ns2:middleName>
+                    </nameInfo>
+                    <INN>321200931120</INN>
+                    <position>ДИРЕКТОР</position>
+                </informationPersonInfo>
+            </informationPersonsInfo>
+        </legalEntityRFInfo>
+        <contractorRegistryNum>19019753</contractorRegistryNum>
+        <status>
+            <ns3:code>30</ns3:code>
+            <ns3:name>Субъект малого предпринимательства</ns3:name>
+        </status>
+        <participantAccountsDetailsInfo>
+            <electronicContractAccountsDetailsInfo>
+                <electronicContractAccountDetailsInfo>
+                    <ns2:sid>65747659</ns2:sid>
+                    <ns2:externalSid>a11b0610-6f39-4bd4-abff-c3a7d151dbcb</ns2:externalSid>
+                    <ns2:accountType>03</ns2:accountType>
+                    <ns2:creditOrgName>Филиал "Центральный" Банка ВТБ (ПАО)</ns2:creditOrgName>
+                    <ns2:detailsCreditOrgText>Филиал "Центральный" Банка ВТБ (ПАО), г. Москва</ns2:detailsCreditOrgText>
+                    <ns2:bankAccountNumber>40702810710660004664</ns2:bankAccountNumber>
+                    <ns2:bik>044525411</ns2:bik>
+                    <ns2:corrAccountNumber>30101810145250000411</ns2:corrAccountNumber>
+                    <ns2:counterparty160Name>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЭКЗИТ МЕДИКАЛ"</ns2:counterparty160Name>
+                </electronicContractAccountDetailsInfo>
+            </electronicContractAccountsDetailsInfo>
+        </participantAccountsDetailsInfo>
+    </participantInfo>
+    <foundationInfo>
+        <placingWay>
+            <ns3:code>EA20</ns3:code>
+            <ns3:name>Электронный аукцион</ns3:name>
+        </placingWay>
+        <purchaseCode>242320300308032410100105440012120244</purchaseCode>
+        <purchaseNumber>0127200000224007456</purchaseNumber>
+        <protocolInfo>
+            <name>Протокол подведения итогов определения поставщика (подрядчика, исполнителя)</name>
+            <number>ИЭА1</number>
+            <publishDTInEIS>2024-12-26T00:00:00.000+03:00</publishDTInEIS>
+        </protocolInfo>
+    </foundationInfo>
+    <contractSubjectInfo>
+        <contractSubject>Поставка лабораторных реактивов (Тропонин I ИВД, набор, иммунохроматографический анализ, экспресс-анализ; Креатинкиназа сердечный изофермент ИВД, набор, иммунохроматографический анализ, экспресс-анализ; Скрытая кровь в кале ИВД, набор, иммунохроматографический анализ, экспресс-анализ, клинический)</contractSubject>
+        <productsInfo>
+            <productsInfoElectronicContract>
+                <productInfo>
+                    <sid>22435736</sid>
+                    <externalSid>1294E8EA-195F-4577-AD86-FE9561274028</externalSid>
+                    <protocolObjectSid>51125366</protocolObjectSid>
+                    <indexNum>1</indexNum>
+                    <name>Креатинкиназа сердечный изофермент ИВД, набор, иммунохроматографический анализ, экспресс-анализ</name>
+                    <OKPD2Info>
+                        <ns3:OKPDCode>21.20.23.110</ns3:OKPDCode>
+                        <ns3:OKPDName>Реагенты диагностические</ns3:OKPDName>
+                    </OKPD2Info>
+                    <KTRUInfo>
+                        <ns3:code>21.20.23.110-00008340</ns3:code>
+                        <ns3:name>Креатинкиназа сердечный изофермент ИВД, набор, иммунохроматографический анализ, экспресс-анализ</ns3:name>
+                        <ns3:versionId>70907</ns3:versionId>
+                        <ns3:versionNumber>1</ns3:versionNumber>
+                        <characteristics>
+                            <characteristicsUsingReferenceInfo>
+                                <ns2:sid>70685114</ns2:sid>
+                                <ns2:code>97e271a7-c</ns2:code>
+                                <ns2:name>Количество выполняемых тестов</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:kind>1</ns2:kind>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>73625374</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>796</ns3:code>
+                                            <ns3:nationalCode>шт</ns3:nationalCode>
+                                            <ns3:name>Штука</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>20</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingReferenceInfo>
+                            <characteristicsUsingReferenceInfo>
+                                <ns2:sid>70685115</ns2:sid>
+                                <ns2:code>c9bb43d4-c</ns2:code>
+                                <ns2:name>Назначение</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:kind>1</ns2:kind>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>73625375</ns2:sid>
+                                        <ns2:qualityDescription>Для анализаторов серии Easy Reader</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingReferenceInfo>
+                        </characteristics>
+                    </KTRUInfo>
+                    <hierarchyType>ND</hierarchyType>
+                    <type>PRODUCT</type>
+                    <sum>1716627.60</sum>
+                    <medicalProductInfo>
+                        <isMedicalProductInfo>true</isMedicalProductInfo>
+                        <medicalProductCode>284460</medicalProductCode>
+                        <medicalProductName>Креатинкиназа сердечный изофермент ИВД, набор, иммунохроматографический анализ, экспресс-анализ</medicalProductName>
+                        <certificateNameMedicalProduct>Креатинкиназа сердечный изофермент ИВД, набор, иммунохроматографический анализ, экспресс-анализ</certificateNameMedicalProduct>
+                    </medicalProductInfo>
+                    <trademarkInfo>
+                        <trademark>Креатинкиназа сердечный изофермент ИВД, набор, иммунохроматографический анализ, экспресс-анализ</trademark>
+                    </trademarkInfo>
+                    <OKEIInfo>
+                        <ns3:code>704</ns3:code>
+                        <ns3:nationalCode>набор</ns3:nationalCode>
+                        <ns3:name>Набор</ns3:name>
+                    </OKEIInfo>
+                    <quantity>120</quantity>
+                    <price>14305.23</price>
+                    <originCountryInfo>
+                        <ns3:countryCode>643</ns3:countryCode>
+                        <ns3:countryFullName>Российская Федерация</ns3:countryFullName>
+                    </originCountryInfo>
+                    <originCountryInfo>
+                        <ns3:countryCode>250</ns3:countryCode>
+                        <ns3:countryFullName>Французская Республика</ns3:countryFullName>
+                    </originCountryInfo>
+                    <VATRateInfo>
+                        <ns3:VATCode>R10</ns3:VATCode>
+                        <ns3:VATName>10%</ns3:VATName>
+                    </VATRateInfo>
+                    <isDuplicated>false</isDuplicated>
+                </productInfo>
+                <productInfo>
+                    <sid>22435738</sid>
+                    <externalSid>296D4C38-2291-451F-91F2-21E0F9AAD8C0</externalSid>
+                    <protocolObjectSid>51125368</protocolObjectSid>
+                    <indexNum>3</indexNum>
+                    <name>Скрытая кровь в кале ИВД, набор, иммунохроматографический анализ, экспресс-анализ, клинический</name>
+                    <OKPD2Info>
+                        <ns3:OKPDCode>21.20.23.110</ns3:OKPDCode>
+                        <ns3:OKPDName>Реагенты диагностические</ns3:OKPDName>
+                    </OKPD2Info>
+                    <KTRUInfo>
+                        <ns3:code>21.20.23.110-00005860</ns3:code>
+                        <ns3:name>Скрытая кровь в кале ИВД, набор, иммунохроматографический анализ, экспресс-анализ, клинический</ns3:name>
+                        <ns3:versionId>166965</ns3:versionId>
+                        <ns3:versionNumber>3</ns3:versionNumber>
+                        <characteristics>
+                            <characteristicsUsingReferenceInfo>
+                                <ns2:sid>70685119</ns2:sid>
+                                <ns2:code>8e5eb6c6-2</ns2:code>
+                                <ns2:name>Количество выполняемых тестов</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:kind>1</ns2:kind>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>73625379</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>796</ns3:code>
+                                            <ns3:nationalCode>шт</ns3:nationalCode>
+                                            <ns3:name>Штука</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>20</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingReferenceInfo>
+                            <characteristicsUsingReferenceInfo>
+                                <ns2:sid>70685120</ns2:sid>
+                                <ns2:code>2d40bfc9-2</ns2:code>
+                                <ns2:name>Специфичен по отношению к гемоглобину и комплексу гемоглобин/гаптоглобин</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:kind>2</ns2:kind>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>73625380</ns2:sid>
+                                        <ns2:qualityDescription>Нет</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingReferenceInfo>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>70685118</ns2:sid>
+                                <ns2:name>Совместимость</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>73625378</ns2:sid>
+                                        <ns2:qualityDescription>Совместим с анализатором серии Easy Reader</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                        </characteristics>
+                    </KTRUInfo>
+                    <hierarchyType>ND</hierarchyType>
+                    <type>PRODUCT</type>
+                    <sum>1979991.00</sum>
+                    <medicalProductInfo>
+                        <isMedicalProductInfo>true</isMedicalProductInfo>
+                        <medicalProductCode>120930</medicalProductCode>
+                        <medicalProductName>Скрытая кровь в кале ИВД, набор, иммунохроматографический анализ, экспресс-анализ, клинический</medicalProductName>
+                        <certificateNameMedicalProduct>Скрытая кровь в кале ИВД, набор, иммунохроматографический анализ, экспресс-анализ, клинический</certificateNameMedicalProduct>
+                    </medicalProductInfo>
+                    <trademarkInfo>
+                        <trademark>Скрытая кровь в кале ИВД, набор, иммунохроматографический анализ, экспресс-анализ, клинический</trademark>
+                    </trademarkInfo>
+                    <OKEIInfo>
+                        <ns3:code>796</ns3:code>
+                        <ns3:nationalCode>шт</ns3:nationalCode>
+                        <ns3:name>Штука</ns3:name>
+                    </OKEIInfo>
+                    <quantity>300</quantity>
+                    <price>6599.97</price>
+                    <originCountryInfo>
+                        <ns3:countryCode>250</ns3:countryCode>
+                        <ns3:countryFullName>Французская Республика</ns3:countryFullName>
+                    </originCountryInfo>
+                    <VATRateInfo>
+                        <ns3:VATCode>R10</ns3:VATCode>
+                        <ns3:VATName>10%</ns3:VATName>
+                    </VATRateInfo>
+                    <isDuplicated>false</isDuplicated>
+                </productInfo>
+                <productInfo>
+                    <sid>22435737</sid>
+                    <externalSid>709A1774-2C1D-4773-8C9B-F2C0E39E8721</externalSid>
+                    <protocolObjectSid>51125367</protocolObjectSid>
+                    <indexNum>2</indexNum>
+                    <name>Тропонин I ИВД, набор, иммунохроматографический анализ, экспресс-анализ</name>
+                    <OKPD2Info>
+                        <ns3:OKPDCode>21.20.23.110</ns3:OKPDCode>
+                        <ns3:OKPDName>Реагенты диагностические</ns3:OKPDName>
+                    </OKPD2Info>
+                    <KTRUInfo>
+                        <ns3:code>21.20.23.110-00009551</ns3:code>
+                        <ns3:name>Тропонин I ИВД, набор, иммунохроматографический анализ, экспресс-анализ</ns3:name>
+                        <ns3:versionId>71683</ns3:versionId>
+                        <ns3:versionNumber>1</ns3:versionNumber>
+                        <characteristics>
+                            <characteristicsUsingReferenceInfo>
+                                <ns2:sid>70685116</ns2:sid>
+                                <ns2:code>bc9b4a48-7</ns2:code>
+                                <ns2:name>Количество выполняемых тестов</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:kind>1</ns2:kind>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>73625376</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>796</ns3:code>
+                                            <ns3:nationalCode>шт</ns3:nationalCode>
+                                            <ns3:name>Штука</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>20</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingReferenceInfo>
+                            <characteristicsUsingReferenceInfo>
+                                <ns2:sid>70685117</ns2:sid>
+                                <ns2:code>a66e9b93-b</ns2:code>
+                                <ns2:name>Назначение</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:kind>1</ns2:kind>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>73625377</ns2:sid>
+                                        <ns2:qualityDescription>Для анализаторов серии Easy Reader</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingReferenceInfo>
+                        </characteristics>
+                    </KTRUInfo>
+                    <hierarchyType>ND</hierarchyType>
+                    <type>PRODUCT</type>
+                    <sum>620220.60</sum>
+                    <medicalProductInfo>
+                        <isMedicalProductInfo>true</isMedicalProductInfo>
+                        <medicalProductCode>244790</medicalProductCode>
+                        <medicalProductName>Тропонин I ИВД, набор, иммунохроматографический анализ, экспресс-анализ</medicalProductName>
+                        <certificateNameMedicalProduct>Тропонин I ИВД, набор, иммунохроматографический анализ, экспресс-анализ</certificateNameMedicalProduct>
+                    </medicalProductInfo>
+                    <trademarkInfo>
+                        <trademark>Тропонин I ИВД, набор, иммунохроматографический анализ, экспресс-анализ</trademark>
+                    </trademarkInfo>
+                    <OKEIInfo>
+                        <ns3:code>704</ns3:code>
+                        <ns3:nationalCode>набор</ns3:nationalCode>
+                        <ns3:name>Набор</ns3:name>
+                    </OKEIInfo>
+                    <quantity>60</quantity>
+                    <price>10337.01</price>
+                    <originCountryInfo>
+                        <ns3:countryCode>643</ns3:countryCode>
+                        <ns3:countryFullName>Российская Федерация</ns3:countryFullName>
+                    </originCountryInfo>
+                    <originCountryInfo>
+                        <ns3:countryCode>250</ns3:countryCode>
+                        <ns3:countryFullName>Французская Республика</ns3:countryFullName>
+                    </originCountryInfo>
+                    <VATRateInfo>
+                        <ns3:VATCode>R10</ns3:VATCode>
+                        <ns3:VATName>10%</ns3:VATName>
+                    </VATRateInfo>
+                    <isDuplicated>false</isDuplicated>
+                </productInfo>
+            </productsInfoElectronicContract>
+        </productsInfo>
+    </contractSubjectInfo>
+    <contractConditionsInfo>
+        <contractExecutionTermsInfo>
+            <notRelativeTermsInfo>
+                <isFromConclusionDate>true</isFromConclusionDate>
+                <endDate>2025-12-31</endDate>
+            </notRelativeTermsInfo>
+        </contractExecutionTermsInfo>
+        <stagesInfo>
+            <stageInfo>
+                <sid>7444862</sid>
+                <externalSid>D686AE70-D738-4AD2-AC9E-8DF36B3A1023</externalSid>
+                <purchaseStageSid>13113430</purchaseStageSid>
+                <purchaseStageExternalSid>897D9CCC-F126-4A96-B3DD-D293B573BE0F</purchaseStageExternalSid>
+                <termsInfo>
+                    <notRelativeTermsInfo>
+                        <isFromConclusionDate>true</isFromConclusionDate>
+                        <endDate>2025-12-31</endDate>
+                    </notRelativeTermsInfo>
+                </termsInfo>
+                <paymentsSumInfo>
+                    <paymentsSum>4316839.20</paymentsSum>
+                    <advancePaymentSumInfo>
+                        <sum>0.00</sum>
+                        <sumInPercents>0.0</sumInPercents>
+                    </advancePaymentSumInfo>
+                    <nonbudgetFinancingsInfo>
+                        <KVR>244</KVR>
+                        <paymentYearsInfo>
+                            <paymentYearInfo>
+                                <paymentYear>2025</paymentYear>
+                                <paymentSum>4316839.20</paymentSum>
+                            </paymentYearInfo>
+                        </paymentYearsInfo>
+                    </nonbudgetFinancingsInfo>
+                </paymentsSumInfo>
+            </stageInfo>
+        </stagesInfo>
+        <deliveryPlaceInfo>
+            <byKLADRInfo>
+                <sid>4085764</sid>
+                <countryInfo>
+                    <ns3:countryCode>643</ns3:countryCode>
+                    <ns3:countryFullName>Российская Федерация</ns3:countryFullName>
+                </countryInfo>
+                <deliveryPlace>243140, Брянская область, г. Клинцы, ул. Ворошилова, 31 А</deliveryPlace>
+                <noKladrForRegionSettlementInfo/>
+            </byKLADRInfo>
+        </deliveryPlaceInfo>
+        <contractGuaranteeInfo>
+            <isContractGuarantee>true</isContractGuarantee>
+            <part>5.0</part>
+            <amount>215841.96</amount>
+            <procedureInfo>Обеспечение исполнения контракта предоставляется в порядке, с соблюдением требований, предусмотренных ст. 96 Федерального закона № 44-ФЗ. Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям ст. 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Закона о контрактной системе участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со ст. 95 Федерального закона № 44-ФЗ.</procedureInfo>
+        </contractGuaranteeInfo>
+        <otherConditionsInfo>
+            <oneSideRejection>true</oneSideRejection>
+        </otherConditionsInfo>
+    </contractConditionsInfo>
+    <contractFinancingInfo>
+        <financingSourcesInfo>
+            <nonbudgetFinancingsInfo>
+                <selfFunds>true</selfFunds>
+            </nonbudgetFinancingsInfo>
+            <bankSupportContractRequiredInfo>
+                <ns2:bankSupportContractRequired>false</ns2:bankSupportContractRequired>
+            </bankSupportContractRequiredInfo>
+        </financingSourcesInfo>
+        <contractPriceInfo>
+            <priceType>P</priceType>
+            <price>4316839.20</price>
+            <priceVAT>392439.93</priceVAT>
+            <currencyInfo>
+                <ns3:code>RUB</ns3:code>
+                <ns3:name>РОССИЙСКИЙ РУБЛЬ</ns3:name>
+            </currencyInfo>
+        </contractPriceInfo>
+        <paymentProcedureInfo>
+            <holdCashCondition>true</holdCashCondition>
+            <amountsReducedByTaxes>false</amountsReducedByTaxes>
+        </paymentProcedureInfo>
+        <paymentsInfo>
+            <paymentYearsInfo>
+                <paymentYearInfo>
+                    <paymentYear>2025</paymentYear>
+                    <paymentSum>4316839.20</paymentSum>
+                </paymentYearInfo>
+                <paymentsSum>4316839.20</paymentsSum>
+            </paymentYearsInfo>
+        </paymentsInfo>
+    </contractFinancingInfo>
+    <attachmentsInfo>
+        <attachmentInfo>
+            <publishedContentId>42550101B97A4E7EADC36B6F22E68C3A</publishedContentId>
+            <fileName>Контракт.doc</fileName>
+            <docDescription>Проект государственного контракта</docDescription>
+            <contentId>42550101B97A4E7EADC36B6F22E68C3A</contentId>
+            <fileSize>255488</fileSize>
+            <fileFingerPrint>QkQ0MDFENzk2NzI5MTM3QUZCRTJEQzI4NDg5QzVFRjBERjc1RUU1M0VFNTIwRjJCNDEwNjNGMTlDMTQyMDlCMw==</fileFingerPrint>
+        </attachmentInfo>
+    </attachmentsInfo>
+    <printFormFieldsInfo>
+        <revisionNumber>1</revisionNumber>
+    </printFormFieldsInfo>
+</ns6:cpElectronicContract>

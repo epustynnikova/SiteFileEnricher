@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns6:cpElectronicContract schemeVersion="14.3" xmlns="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/printform/1" xmlns:ns5="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/common/1" xmlns:ns4="http://zakupki.gov.ru/oos/types/1" xmlns:ns3="http://zakupki.gov.ru/oos/base/1">
+    <versionNumber>1</versionNumber>
+    <contractNumber>0372100037124000622</contractNumber>
+    <docType>1</docType>
+    <mainDocInfo>
+        <id>19663267</id>
+    </mainDocInfo>
+    <customerInfo>
+        <ns2:regNum>03721000371</ns2:regNum>
+        <ns2:consRegistryNum>402Ц2721</ns2:consRegistryNum>
+        <ns2:fullName>САНКТ-ПЕТЕРБУРГСКОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ГОРОДСКОЙ КЛИНИЧЕСКИЙ ОНКОЛОГИЧЕСКИЙ ДИСПАНСЕР"</ns2:fullName>
+        <ns2:shortName>СПБ ГБУЗ ГКОД</ns2:shortName>
+        <ns2:postAddress>198255, г. Санкт-Петербург, пр. Ветеранов, 56</ns2:postAddress>
+        <ns2:factAddress>Российская Федерация, 197022, Санкт-Петербург, АЛ. 2-Я БЕРЁЗОВАЯ, Д.3/5</ns2:factAddress>
+        <ns2:INN>7813085250</ns2:INN>
+        <ns2:KPP>781301001</ns2:KPP>
+        <OKOPFInfo>
+            <ns3:code>75203</ns3:code>
+            <ns3:singularName>Государственные бюджетные учреждения субъектов Российской Федерации</ns3:singularName>
+        </OKOPFInfo>
+        <contactPersonInfo>
+            <ns2:lastName>Огурченок</ns2:lastName>
+            <ns2:firstName>Нона</ns2:firstName>
+            <ns2:middleName>Евгеньевна</ns2:middleName>
+        </contactPersonInfo>
+        <email>oks.gkod@mail.ru</email>
+        <contactPhone>7-812-6070581 доб.</contactPhone>
+        <customerAccountsDetailsInfo>
+            <customerAccountDetailsInfo>
+                <ns2:sid>63564610</ns2:sid>
+                <ns2:accountType>02</ns2:accountType>
+                <ns2:personalAccountNumber>0151116</ns2:personalAccountNumber>
+                <ns2:creditOrgName>УФК по г.Санкт-Петербургу</ns2:creditOrgName>
+                <ns2:detailsCreditOrgText>СЕВЕРО-ЗАПАДНОЕ ГУ БАНКА РОССИИ // УФК по г.Санкт-Петербургу, г. Санкт-Петербург</ns2:detailsCreditOrgText>
+                <ns2:bankAccountNumber>03224643400000007200</ns2:bankAccountNumber>
+                <ns2:bik>014030106</ns2:bik>
+                <ns2:corrAccountNumber>40102810945370000005</ns2:corrAccountNumber>
+            </customerAccountDetailsInfo>
+        </customerAccountsDetailsInfo>
+    </customerInfo>
+    <participantInfo>
+        <legalEntityRFInfo>
+            <fullName>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЦЕНТРАЛЬНАЯ МЕДИЦИНСКАЯ БАЗА"</fullName>
+            <shortName>ООО "ЦМБ"</shortName>
+            <OGRN>1027810273260</OGRN>
+            <INN>7826679163</INN>
+            <KPP>783901001</KPP>
+            <factAddress>190121, Г.САНКТ-ПЕТЕРБУРГ, УЛ. ПСКОВСКАЯ, Д.10-12, ЛИТ.А, ПОМ.1-Н</factAddress>
+            <postAddress>190121 Санкт-Петербург, а/я 145</postAddress>
+            <email>INFO@TSMB.RU</email>
+            <contactPhone>7 8123259520</contactPhone>
+            <informationPersonsInfo>
+                <informationPersonInfo>
+                    <nameInfo>
+                        <ns2:lastName>СМИРНОВ</ns2:lastName>
+                        <ns2:firstName>НИКОЛАЙ</ns2:firstName>
+                        <ns2:middleName>АЛЕКСЕЕВИЧ</ns2:middleName>
+                    </nameInfo>
+                    <INN>600800662289</INN>
+                    <position>директор</position>
+                </informationPersonInfo>
+            </informationPersonsInfo>
+        </legalEntityRFInfo>
+        <contractorRegistryNum>19167696</contractorRegistryNum>
+        <participantAccountsDetailsInfo>
+            <electronicContractAccountsDetailsInfo>
+                <electronicContractAccountDetailsInfo>
+                    <ns2:sid>63126935</ns2:sid>
+                    <ns2:accountType>03</ns2:accountType>
+                    <ns2:creditOrgName>АО БАНК "ПСКБ"</ns2:creditOrgName>
+                    <ns2:detailsCreditOrgText>АО БАНК "ПСКБ", г. Санкт-Петербург</ns2:detailsCreditOrgText>
+                    <ns2:bankAccountNumber>40702810100000032199</ns2:bankAccountNumber>
+                    <ns2:bik>044030852</ns2:bik>
+                    <ns2:corrAccountNumber>30101810000000000852</ns2:corrAccountNumber>
+                    <ns2:counterparty160Name>ООО "ЦМБ"</ns2:counterparty160Name>
+                </electronicContractAccountDetailsInfo>
+            </electronicContractAccountsDetailsInfo>
+        </participantAccountsDetailsInfo>
+    </participantInfo>
+    <foundationInfo>
+        <placingWay>
+            <ns3:code>ZK20</ns3:code>
+            <ns3:name>Запрос котировок в электронной форме</ns3:name>
+        </placingWay>
+        <purchaseCode>241781308525078130100104820010000244</purchaseCode>
+        <purchaseNumber>0372100037124000622</purchaseNumber>
+        <protocolInfo>
+            <name>Протокол подведения итогов определения поставщика (подрядчика, исполнителя)</name>
+            <number>ИЗК1</number>
+            <publishDTInEIS>2024-12-19T00:00:00.000+03:00</publishDTInEIS>
+        </protocolInfo>
+    </foundationInfo>
+    <contractSubjectInfo>
+        <contractSubject>Поставка реагентов для патологоанатомического отделения (лот 20)</contractSubject>
+        <productsInfo>
+            <productsInfoElectronicContract>
+                <productInfo>
+                    <sid>21318729</sid>
+                    <protocolObjectSid>49772876</protocolObjectSid>
+                    <indexNum>1</indexNum>
+                    <name>Лиганд программируемой смерти клеток 1 ИВД, набор, иммуногистохимическая реакция с ферментной меткой</name>
+                    <OKPD2Info>
+                        <ns3:OKPDCode>21.20.23.110</ns3:OKPDCode>
+                        <ns3:OKPDName>Реагенты диагностические</ns3:OKPDName>
+                    </OKPD2Info>
+                    <KTRUInfo>
+                        <ns3:code>21.20.23.110-00010280</ns3:code>
+                        <ns3:name>Лиганд программируемой смерти клеток 1 ИВД, набор, иммуногистохимическая реакция с ферментной меткой&#13;
+</ns3:name>
+                        <ns3:versionId>80637</ns3:versionId>
+                        <ns3:versionNumber>1</ns3:versionNumber>
+                        <characteristics>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024954</ns2:sid>
+                                <ns2:name>2.4 Формат фасовки</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835230</ns2:sid>
+                                        <ns2:qualityDescription>диспенсер</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024955</ns2:sid>
+                                <ns2:name>2.3 Количество исследований</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835231</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>50</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024956</ns2:sid>
+                                <ns2:name>2.1 Тип</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835232</ns2:sid>
+                                        <ns2:qualityDescription>моноклональные первичные кроличьи антитела</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024957</ns2:sid>
+                                <ns2:name>2.2 Клон</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835233</ns2:sid>
+                                        <ns2:qualityDescription>SP142</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024958</ns2:sid>
+                                <ns2:name>2.5 объем диспенсера</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835234</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>111</ns3:code>
+                                            <ns3:nationalCode>см³;^мл</ns3:nationalCode>
+                                            <ns3:name>Кубический сантиметр;^миллилитр</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>5</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                        </characteristics>
+                    </KTRUInfo>
+                    <hierarchyType>ND</hierarchyType>
+                    <type>PRODUCT</type>
+                    <sum>322519.43</sum>
+                    <medicalProductInfo>
+                        <isMedicalProductInfo>true</isMedicalProductInfo>
+                        <medicalProductCode>332090</medicalProductCode>
+                        <medicalProductName>Лиганд программируемой смерти клеток 1 ИВД, набор, иммуногистохимическая реакция с ферментной меткой</medicalProductName>
+                        <certificateNameMedicalProduct>Реагент Ventana PD-L1 (SP142) IHC Assay для иммуногистохимической оценки лиганда-1 белка программируемой смерти в in vitro диагностике к иммуностейнерам автоматическим серии Ventana BenchMark</certificateNameMedicalProduct>
+                    </medicalProductInfo>
+                    <OKEIInfo>
+                        <ns3:code>704</ns3:code>
+                        <ns3:nationalCode>набор</ns3:nationalCode>
+                        <ns3:name>Набор</ns3:name>
+                    </OKEIInfo>
+                    <quantity>1</quantity>
+                    <price>322519.43</price>
+                    <originCountryInfo>
+                        <ns3:countryCode>840</ns3:countryCode>
+                        <ns3:countryFullName>Соединенные Штаты Америки</ns3:countryFullName>
+                    </originCountryInfo>
+                    <VATRateInfo>
+                        <ns3:VATCode>R10</ns3:VATCode>
+                        <ns3:VATName>10%</ns3:VATName>
+                    </VATRateInfo>
+                    <isDuplicated>false</isDuplicated>
+                </productInfo>
+                <productInfo>
+                    <sid>21318730</sid>
+                    <protocolObjectSid>49772877</protocolObjectSid>
+                    <indexNum>2</indexNum>
+                    <name>Лиганд программируемой смерти клеток 1 ИВД, набор, иммуногистохимическая реакция с ферментной меткой</name>
+                    <OKPD2Info>
+                        <ns3:OKPDCode>21.20.23.110</ns3:OKPDCode>
+                        <ns3:OKPDName>Реагенты диагностические</ns3:OKPDName>
+                    </OKPD2Info>
+                    <KTRUInfo>
+                        <ns3:code>21.20.23.110-00010280</ns3:code>
+                        <ns3:name>Лиганд программируемой смерти клеток 1 ИВД, набор, иммуногистохимическая реакция с ферментной меткой&#13;
+</ns3:name>
+                        <ns3:versionId>80637</ns3:versionId>
+                        <ns3:versionNumber>1</ns3:versionNumber>
+                        <characteristics>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024959</ns2:sid>
+                                <ns2:name>1.2 Клон</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835235</ns2:sid>
+                                        <ns2:qualityDescription>SP263</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024960</ns2:sid>
+                                <ns2:name>1.4 Формат фасовки</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835236</ns2:sid>
+                                        <ns2:qualityDescription>диспенсер</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024961</ns2:sid>
+                                <ns2:name>1.5 объем диспенсера</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835237</ns2:sid>
+                                        <ns2:OKEI>
+                                            <ns3:code>111</ns3:code>
+                                            <ns3:nationalCode>см³;^мл</ns3:nationalCode>
+                                            <ns3:name>Кубический сантиметр;^миллилитр</ns3:name>
+                                        </ns2:OKEI>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>5</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024962</ns2:sid>
+                                <ns2:name>1.3 Количество исследований</ns2:name>
+                                <ns2:type>2</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835238</ns2:sid>
+                                        <ns2:valueFormat>N</ns2:valueFormat>
+                                        <ns2:valueSet>
+                                            <ns2:concreteValue>50</ns2:concreteValue>
+                                        </ns2:valueSet>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                            <characteristicsUsingTextForm>
+                                <ns2:sid>68024963</ns2:sid>
+                                <ns2:name>1.1 Тип</ns2:name>
+                                <ns2:type>1</ns2:type>
+                                <ns2:values>
+                                    <ns2:value>
+                                        <ns2:sid>70835239</ns2:sid>
+                                        <ns2:qualityDescription>моноклональные первичные кроличьи антитела</ns2:qualityDescription>
+                                    </ns2:value>
+                                </ns2:values>
+                            </characteristicsUsingTextForm>
+                        </characteristics>
+                    </KTRUInfo>
+                    <hierarchyType>ND</hierarchyType>
+                    <type>PRODUCT</type>
+                    <sum>1350999.44</sum>
+                    <medicalProductInfo>
+                        <isMedicalProductInfo>true</isMedicalProductInfo>
+                        <medicalProductCode>332090</medicalProductCode>
+                        <medicalProductName>Лиганд программируемой смерти клеток 1 ИВД, набор, иммуногистохимическая реакция с ферментной меткой</medicalProductName>
+                        <certificateNameMedicalProduct>Реагент Ventana PD-L1 (SP263) Assay для качественного обнаружения лиганда-1 белка программируемой смерти Programmed Death Ligand 1 (PD-L1) иммуногистохимическим анализом в in vitro диагностике к иммуностейнерам автоматическим серии Ventana BenchMark</certificateNameMedicalProduct>
+                    </medicalProductInfo>
+                    <OKEIInfo>
+                        <ns3:code>704</ns3:code>
+                        <ns3:nationalCode>набор</ns3:nationalCode>
+                        <ns3:name>Набор</ns3:name>
+                    </OKEIInfo>
+                    <quantity>4</quantity>
+                    <price>337749.86</price>
+                    <originCountryInfo>
+                        <ns3:countryCode>840</ns3:countryCode>
+                        <ns3:countryFullName>Соединенные Штаты Америки</ns3:countryFullName>
+                    </originCountryInfo>
+                    <VATRateInfo>
+                        <ns3:VATCode>R10</ns3:VATCode>
+                        <ns3:VATName>10%</ns3:VATName>
+                    </VATRateInfo>
+                    <isDuplicated>false</isDuplicated>
+                </productInfo>
+            </productsInfoElectronicContract>
+        </productsInfo>
+    </contractSubjectInfo>
+    <contractConditionsInfo>
+        <contractExecutionTermsInfo>
+            <notRelativeTermsInfo>
+                <startDate>2025-01-01</startDate>
+                <endDate>2025-12-31</endDate>
+            </notRelativeTermsInfo>
+        </contractExecutionTermsInfo>
+        <stagesInfo>
+            <stageInfo>
+                <sid>7049060</sid>
+                <purchaseStageSid>12978417</purchaseStageSid>
+                <purchaseStageExternalSid>350332</purchaseStageExternalSid>
+                <termsInfo>
+                    <notRelativeTermsInfo>
+                        <startDate>2025-01-01</startDate>
+                        <endDate>2025-12-31</endDate>
+                    </notRelativeTermsInfo>
+                </termsInfo>
+                <paymentsSumInfo>
+                    <paymentsSum>1673518.87</paymentsSum>
+                    <advancePaymentSumInfo>
+                        <sum>0.00</sum>
+                        <sumInPercents>0.0</sumInPercents>
+                    </advancePaymentSumInfo>
+                    <nonbudgetFinancingsInfo>
+                        <KVR>244</KVR>
+                        <paymentYearsInfo>
+                            <paymentYearInfo>
+                                <paymentYear>2025</paymentYear>
+                                <paymentSum>1673518.87</paymentSum>
+                            </paymentYearInfo>
+                        </paymentYearsInfo>
+                    </nonbudgetFinancingsInfo>
+                </paymentsSumInfo>
+            </stageInfo>
+        </stagesInfo>
+        <deliveryPlaceInfo>
+            <byKLADRInfo>
+                <sid>3888287</sid>
+                <countryInfo>
+                    <ns3:countryCode>643</ns3:countryCode>
+                    <ns3:countryFullName>Российская Федерация</ns3:countryFullName>
+                </countryInfo>
+                <deliveryPlace>198255, Санкт-Петербург, пр. Ветеранов, д. 56, СПб ГБУЗ ГКОД, медицинский склад.</deliveryPlace>
+                <noKladrForRegionSettlementInfo/>
+            </byKLADRInfo>
+        </deliveryPlaceInfo>
+        <contractGuaranteeInfo>
+            <isContractGuarantee>true</isContractGuarantee>
+            <part>5.0</part>
+            <amount>83675.94</amount>
+            <procedureInfo>Участник закупки обязан представить обеспечение исполнения контракта в размере, установленном в извещении об осуществлении закупки. Обеспечение исполнения контракта на участие в закупке предоставляется одним из следующих способов: а) внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. б) предоставлением независимой гарантии, соответствующей требованиям статьи 45 Закона № 44. Порядок обеспечения исполнения контракта путем предоставления независимой гарантии установлен статьей 96 Закона № 44 и приложением № 4 к извещению об осуществлении закупки, условия независимой гарантии установлены статьей 45 Закона № 44 и постановлением Правительства Российской Федерации от 08.11.2013 № 1005. Бенефициаром по независимой гарантии выступает: СПб ГБУЗ ГКОД.Реквизиты счета для перечисления денежных средств следующие. Получатель: ИНН 7813085250, КПП 781301001, ОКТМО 40394000, КБК 00000000000000003510, УФК по г. Санкт-Петербургу (СПб ГБУЗ ГКОД л/с 0151116). Реквизиты банковского счета: СЕВЕРО -ЗАПАДНОЕ ГУ БАНКА РОССИИ//УФК по г. Санкт-Петербургу, БИК 014030106, к/с 40102810945370000005, р/с 03224643400000007200</procedureInfo>
+        </contractGuaranteeInfo>
+        <otherConditionsInfo>
+            <oneSideRejection>true</oneSideRejection>
+        </otherConditionsInfo>
+    </contractConditionsInfo>
+    <contractFinancingInfo>
+        <financingSourcesInfo>
+            <nonbudgetFinancingsInfo>
+                <selfFunds>true</selfFunds>
+            </nonbudgetFinancingsInfo>
+            <bankSupportContractRequiredInfo>
+                <ns2:bankSupportContractRequired>false</ns2:bankSupportContractRequired>
+            </bankSupportContractRequiredInfo>
+        </financingSourcesInfo>
+        <contractPriceInfo>
+            <priceType>P</priceType>
+            <price>1673518.87</price>
+            <priceVAT>152138.08</priceVAT>
+            <currencyInfo>
+                <ns3:code>RUB</ns3:code>
+                <ns3:name>РОССИЙСКИЙ РУБЛЬ</ns3:name>
+            </currencyInfo>
+        </contractPriceInfo>
+        <paymentProcedureInfo>
+            <holdCashCondition>true</holdCashCondition>
+            <amountsReducedByTaxes>true</amountsReducedByTaxes>
+        </paymentProcedureInfo>
+        <paymentsInfo>
+            <paymentYearsInfo>
+                <paymentYearInfo>
+                    <paymentYear>2025</paymentYear>
+                    <paymentSum>1673518.87</paymentSum>
+                </paymentYearInfo>
+                <paymentsSum>1673518.87</paymentsSum>
+            </paymentYearsInfo>
+        </paymentsInfo>
+    </contractFinancingInfo>
+    <attachmentsInfo>
+        <attachmentInfo>
+            <publishedContentId>E31FFE846DAE4B58B5FDD9854F52A21C</publishedContentId>
+            <fileName>622_реаг_ПАО_20_ЦМБ.doc</fileName>
+            <docDescription>622_реаг_ПАО_20_ЦМБ</docDescription>
+            <contentId>E31FFE846DAE4B58B5FDD9854F52A21C</contentId>
+            <fileSize>231936</fileSize>
+        </attachmentInfo>
+    </attachmentsInfo>
+    <printFormFieldsInfo>
+        <revisionNumber>1</revisionNumber>
+    </printFormFieldsInfo>
+</ns6:cpElectronicContract>

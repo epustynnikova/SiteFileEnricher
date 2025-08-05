@@ -11,7 +11,9 @@ class TestXLSXFileHandler(unittest.TestCase):
     def test_read(self):
         # given:
         path = 'sources/xlsx/short_example.xlsx'
-        handler = XLXSFileHandler(path, [])
+        output_file_path= 'sources/xlsx'
+        output_file_name = 'short_example.xlsx'
+        handler = XLXSFileHandler(path, [], output_file_path, output_file_name)
         test_data = {
             0: 1,
             1: 1,
@@ -36,7 +38,9 @@ class TestXLSXFileHandler(unittest.TestCase):
     def test_read_ktru(self):
         # given:
         path = 'sources/xlsx/testold.xlsx'
-        handler = XLXSFileHandler(path, ['field_a'])
+        output_file_path= 'sources/xlsx'
+        output_file_name = 'testold.xlsx'
+        handler = XLXSFileHandler(path, ['field_a'], output_file_path, output_file_name)
 
         # when:
         result = handler.read()
@@ -48,7 +52,9 @@ class TestXLSXFileHandler(unittest.TestCase):
         # given:
         path = 'sources/xlsx/short_example_1.xlsx'
         shutil.copy('sources/xlsx/short_example.xlsx', path)
-        handler = XLXSFileHandler(path, ['field_a', 'field_b'], output_file_path=path)
+        output_file_path= 'sources/xlsx'
+        output_file_name = 'short_example_1.xlsx'
+        handler = XLXSFileHandler(path, ['field_a', 'field_b'], output_file_path, output_file_name)
         additional_elements = [
             OutputElement(1, "", [FileColData(1, 'field_a', 'a_1'), FileColData(2, 'field_b', 'b_1')]),
             OutputElement(2, "", [FileColData(1, 'field_a', 'a_2'), FileColData(2, 'field_b', 'b_2')]),

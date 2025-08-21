@@ -144,7 +144,7 @@ if __name__ == "__main__":
     try:
         enrich_file_with_default_settings(
         abs_path_to_file=os.path.abspath('10_apr_deleted500.xlsx'),
-        cert_abs_path=os.path.abspath('russiantrustedca/russiantrustedca.pem'),
+        cert_abs_path=os.path.abspath('../russiantrustedca/russiantrustedca.pem'),
         out_path=os.path.dirname(os.path.abspath('result.xlsx')),
         out_file_name="enriched_10_apr_deleted500.xlsx"
         )

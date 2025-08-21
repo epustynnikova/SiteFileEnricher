@@ -17,7 +17,7 @@ from site_file_enricher.script import enrich_file_with_default_settings
 
 if __name__ == "__main__":
     path = os.path.abspath('input_tsv_file.txt')
-    cert_path = os.path.abspath('site_file_enricher/russiantrustedca/russiantrustedca.pem')
+    cert_path = os.path.abspath('russiantrustedca/russiantrustedca.pem')
     enrich_file_with_default_settings(path, cert_path)
 ```
 

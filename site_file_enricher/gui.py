@@ -131,6 +131,20 @@ class GuiApplication(toga.App):
             "Информация о приложении", on_press=self.action_app_info_dialog, style=btn_style
         )
 
+        switch_check_okpd = toga.Switch(
+            text="Проверять ОКПД при сопоставлении строк",
+            on_change=self.check_okpd,
+            value=True,
+            style=btn_style,
+        )
+
+        switch_check_other_column = toga.Switch(
+            text="Сопоставлять строки по остаточному принципу",
+            on_change=self.check_other_column,
+            value=False,
+            style=btn_style,
+        )
+
         self.progress_bar = toga.ProgressBar(max=100, value=0)
 
         # Outermost box
@@ -138,6 +152,8 @@ class GuiApplication(toga.App):
             children=[
                 btn_app_open_xslx,
                 btn_app_open_cert,
+                switch_check_okpd,
+                switch_check_other_column,
                 self.progress_bar,
                 btn_start,
                 self.info_box,
@@ -152,6 +168,19 @@ class GuiApplication(toga.App):
 
         # Show the main window
         self.main_window.show()
+
+    async def check_okpd(self, widget):
+        if self.check_okpd.value:
+            self.check_okpd.value = False
+        else:
+            self.check_okpd.value = True
+
+
+    async def check_other_column(self, widget):
+        if self.check_other_column.value:
+            self.check_other_column.value = False
+        else:
+            self.check_other_column.value = True
 
     async def action_app_info_dialog(self, widget):
         await self.dialog(toga.InfoDialog(

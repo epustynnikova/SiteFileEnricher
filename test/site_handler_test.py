@@ -28,7 +28,7 @@ class TestSiteHandler(unittest.TestCase):
 
         # when:
         result = asyncio.run(site_handler.download_xml_and_parse(
-            contact_link=link,
+            contract_link=link,
             cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
         ))
 
@@ -67,7 +67,7 @@ class TestSiteHandler(unittest.TestCase):
 
         # when:
         result = asyncio.run(site_handler.download_xml_and_parse(
-            contact_link=link,
+            contract_link=link,
             cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
         ))
 
@@ -114,7 +114,7 @@ class TestSiteHandler(unittest.TestCase):
 
         # when:
         result =  asyncio.run(site_handler.download_xml_and_parse(
-            contact_link=link,
+            contract_link=link,
             cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
         ))
         print(result)
@@ -127,7 +127,7 @@ class TestSiteHandler(unittest.TestCase):
 
         # when:
         result = asyncio.run(site_handler.download_xml_and_parse(
-            contact_link=link,
+            contract_link=link,
             cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
         ))
 
@@ -135,6 +135,46 @@ class TestSiteHandler(unittest.TestCase):
         self.assertEqual(1, len(result))
         self.assertEqual('html_product_name', result[0].col_data.name)
         self.assertEqual('ЛОТ №12 < Медицинские изделия_12 >', result[0].col_data.value)
+
+
+
+    def test_contract_draft(self):
+        # given:
+        warnings.filterwarnings('ignore')
+        type_a_root_element = RootTHMLElement(
+            contract_format=HTMLContractFormat.TYPE_A,
+            product_html_element=HTMLElement(name="html_product_name", column_index=1),
+            price_html_element=HTMLElement(name="html_price", column_index=6),
+            children=[
+                HTMLElement(name="html_product_name", column_index=1),
+                HTMLElement(name="html_ktru", column_index=3),
+                HTMLElement(name="html_characteristics", column_index=5),
+            ]
+        )
+        type_b_root_element = RootTHMLElement(
+            contract_format=HTMLContractFormat.TYPE_B,
+            product_html_element=HTMLElement(name="html_product_name", column_index=1),
+            price_html_element=HTMLElement(name="html_price", column_index=5),
+            children=[
+                HTMLElement(name="html_characteristics", row_index=2, column_index=0),
+            ],
+            row_step=3
+        )
+        htmp_parser = HTMLParser(type_a_root_element, type_b_root_element)
+        site_handler = SiteHandler(xml_parser=None, html_parser=htmp_parser)
+        link = 'https://zakupki.gov.ru/epz/order/notice/rpec/common-info.html?regNumber=01015000003250001460011'
+
+        # when:
+        result = asyncio.run(site_handler.download_xml_and_parse(
+            contract_link=link,
+            cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
+        ))
+
+        # then:
+        self.assertEqual(18, len(result))
+        for file_element in result:
+            self.assertEqual(link, file_element.link)
+            self.assertEqual('html_characteristics', file_element.col_data.name)
 
 
 if __name__ == '__main__':

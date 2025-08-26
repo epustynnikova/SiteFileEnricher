@@ -18,7 +18,7 @@ class TestFuzzySearch(unittest.TestCase):
                          name='Test product 2',
                          price=1033701,
                          okpd_ktru='21.20.23.110-00008341')
-            ]
+        ]
         file_data = [
             FileElement(
                 link='https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2320300308025000015',
@@ -32,7 +32,7 @@ class TestFuzzySearch(unittest.TestCase):
                 price=1033701, col_data=FileColData(index_num=1, name='trademark',
                                                     value='trademark2'),
                 ktru='21.20.23.110-00008340', okpd='21.20.23.110')
-            ]
+        ]
         # when:
         result = search(input_data, file_data)
 
@@ -41,6 +41,41 @@ class TestFuzzySearch(unittest.TestCase):
         self.assertEqual('trademark1', result[0].new_col_datas[0].value)
         self.assertEqual('trademark2', result[1].new_col_datas[0].value)
 
+    def test_use_product_name_only_once(self):
+        # given:
+        input_data = [
+            InputElement(index_in_input_file=1,
+                         link='https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2320300308025000015',
+                         name='Test product 1',
+                         price=1033701,
+                         okpd_ktru='21.20.23.110-00008340'),
+            InputElement(index_in_input_file=2,
+                         link='https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2320300308025000015',
+                         name='Test product 2',
+                         price=1033701,
+                         okpd_ktru='21.20.23.110-00008340')
+        ]
+        file_data = [
+            FileElement(
+                link='https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2320300308025000015',
+                product_name='Test product',
+                price=1033701, col_data=FileColData(index_num=1, name='trademark',
+                                                    value='trademark1'),
+                ktru='21.20.23.110-00008340', okpd='21.20.23.110'),
+            FileElement(
+                link='https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2320300308025000015',
+                product_name='Test product',
+                price=1033701, col_data=FileColData(index_num=1, name='trademark',
+                                                    value='trademark2'),
+                ktru='21.20.23.110-00008340', okpd='21.20.23.110')
+        ]
+        # when:
+        result = search(input_data, file_data, use_product_once=True)
+
+        # then:
+        self.assertEqual(2, len(result))
+        self.assertEqual(2, len(result[0].new_col_datas))
+        self.assertEqual(0, len(result[1].new_col_datas))
 
     def test_ktru(self):
         # given:

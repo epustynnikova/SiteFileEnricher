@@ -24,11 +24,7 @@ SUBJECT_TITLES_CSSSELECT_EXPRESSION = '.cardWrapper .wrapper .container .row .co
 SUBJECT_INFO_CSSSELECT_EXPRESSION = '.cardWrapper .wrapper .container .row .col .blockInfo__section .section__info'
 
 import logging
-
-logging.basicConfig(filename=f'site-file-enricher-site-handler.log',
-                    level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-
 
 class SiteHandler:
     def __init__(self, xml_parser: XMLParser, html_parser: HTMLParser):
@@ -197,6 +193,7 @@ class SiteHandler:
 
     async def download_xml_and_parse(self, contract_link: str, cert_abs_path: str):
         try:
+            logger.info(f"Starter handle link: {contract_link}")
             if contract_link:
                 async with ClientSession(headers=HEADERS) as session:
                     context = ssl.SSLContext(protocol=ssl.PROTOCOL_TLS)
@@ -208,6 +205,7 @@ class SiteHandler:
                         # only product name
                         html_product_name = SiteHandler.__try_to_find_product_name__(main_page, contract_link)
                         if html_product_name is not None:
+                            logger.info(f"For link: {contract_link} found product_name at the first page")
                             return [html_product_name]
 
                         # contract draft
@@ -216,12 +214,14 @@ class SiteHandler:
                             session, context, contract_draft_link, contract_link
                         )
                         if len(contact_draft_elements) != 0:
+                            logger.info(f"For link: {contract_link} found draft contract")
                             return contact_draft_elements
 
                         # attachments
                         attachment_link = SiteHandler.__try_to_find_attachments_link__(main_page)
                         attachment_elements = await self.__async_search_through_attachments__(
                             session, context, contract_link, attachment_link)
+                        logger.info(f"For link: {contract_link} attachments tab was handled")
                         return attachment_elements
                     else:
                         return []

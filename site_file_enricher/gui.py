@@ -26,7 +26,6 @@ class GuiApplication(toga.App):
 
     def __init__(self, formal_name, app_id):
         super().__init__(formal_name=formal_name, app_id=app_id)
-        logger.info('dhysfgtyue')
         product_info_root_xml_element = RootXMLElement(
             name="product_info",
             field_name="productInfo",
@@ -138,9 +137,9 @@ class GuiApplication(toga.App):
             style=btn_style,
         )
 
-        switch_check_other_column = toga.Switch(
+        self.switch_use_product_once_during_fuzzy_search = toga.Switch(
             text="Сопоставлять строки по остаточному принципу",
-            on_change=self.check_other_column,
+            on_change=self.action_use_product_once_during_fuzzy_search,
             value=False,
             style=btn_style,
         )
@@ -153,7 +152,7 @@ class GuiApplication(toga.App):
                 btn_app_open_xslx,
                 btn_app_open_cert,
                 switch_check_okpd,
-                switch_check_other_column,
+                self.switch_use_product_once_during_fuzzy_search,
                 self.progress_bar,
                 btn_start,
                 self.info_box,
@@ -176,11 +175,12 @@ class GuiApplication(toga.App):
             self.check_okpd.value = True
 
 
-    async def check_other_column(self, widget):
-        if self.check_other_column.value:
-            self.check_other_column.value = False
+    async def action_use_product_once_during_fuzzy_search(self, widget):
+        switch_value = self.switch_use_product_once_during_fuzzy_search.value
+        if switch_value:
+            self.label.text = "Режим 'Сопоставление по остаточному принципу' включен"
         else:
-            self.check_other_column.value = True
+            self.label.text = "Режим 'Сопоставление по остаточному принципу' выключен"
 
     async def action_app_info_dialog(self, widget):
         await self.dialog(toga.InfoDialog(
@@ -300,7 +300,10 @@ class GuiApplication(toga.App):
                         logger.info(f'Fuzzy search started for link: {link} for xml elements')
                         start = datetime.datetime.now()
 
-                        searched_output_elements = search(input_elements, xml_product_info_els)
+                        searched_output_elements = search(
+                            input_elements,
+                            xml_product_info_els,
+                            use_product_once=self.switch_use_product_once_during_fuzzy_search.value)
                         for searched_output_element in searched_output_elements:
                             searched_output_element.new_col_datas += universal_col_datas
                         new_elements += searched_output_elements

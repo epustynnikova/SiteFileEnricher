@@ -142,7 +142,8 @@ class TSVFileHandler(FileHandler):
 
     def __init__(self, input_file: TextIO, output_file):
         self.input_file = csv.reader(input_file, dialect='excel-tab')
-        self.output_file = csv.writer(output_file, dialect='excel-tab')
+        with open('sources/in/test_out.tsv', mode='w') as out_f:
+            self.output_file = csv.writer(out_f, dialect='excel-tab')
         self.input_file_data = []
 
     def read_elements_count(self) -> int:

@@ -23,8 +23,10 @@ class TestTSVFileHandler(unittest.TestCase):
             result = handler.read()
 
             # then:
-            print(result['https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772801635124000615'])
-            print(result['https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2616410011824000637'])
+            print(result[
+                      'https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772801635124000615'])
+            print(result[
+                      'https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2616410011824000637'])
             self.assertEqual(7, len(result))
             index = 1
             for key in result:
@@ -57,7 +59,7 @@ class TestTSVFileHandler(unittest.TestCase):
             first_line = next(file)
             self.assertEqual('a', first_line[len(first_line) - 3])
             self.assertEqual('b', first_line[len(first_line) - 2])
-            self.assertEqual('',  first_line[len(first_line) - 1])
+            self.assertEqual('', first_line[len(first_line) - 1])
 
             second_line = next(file)
             self.assertEqual('', second_line[len(second_line) - 3])
@@ -71,8 +73,14 @@ class TestGetReader(unittest.TestCase):
         file_format = FileFormat.TSV
 
         # when:
-        with open('sources/in/test_in.tsv', mode='r') as in_f, open('sources/in/test_out.tsv', mode='w') as out_f:
-            reader = get_handler(file_format, in_f, out_f, [], [])
+        with open('sources/in/test_in.tsv', mode='r') as in_f:
+            reader = get_handler(
+                file_format=file_format,
+                input_file=in_f,
+                output_file_path='sources/in/',
+                output_file_name='test_out.tsv',
+                col_names=[]
+            )
 
             # then:
             self.assertTrue(type(reader) is TSVFileHandler)

@@ -22,6 +22,7 @@ logging.basicConfig(filename=f'site-file-enricher.log',
                     level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
+
 class GuiApplication(toga.App):
 
     def __init__(self, formal_name, app_id):
@@ -174,7 +175,6 @@ class GuiApplication(toga.App):
         else:
             self.check_okpd.value = True
 
-
     async def action_use_product_once_during_fuzzy_search(self, widget):
         switch_value = self.switch_use_product_once_during_fuzzy_search.value
         if switch_value:
@@ -186,38 +186,39 @@ class GuiApplication(toga.App):
         await self.dialog(toga.InfoDialog(
             title="Информация о приложении",
             message="""
-        Эта программа парсит xml-файлы, соответствующие ссылкам на государственные контракты, перечисленные в исходном файле, и подгружает сведения о товарах в конец таблицы.
-        
-        - В файле должны присутствовать столбцы а) "Ссылка на источник", б) "Цена за единицу продукции", в) "Код ОКПД2/КТРУ продукта" либо "Код товара, работы или услуги (ОКПД2)", г) "Наименование продукта" либо "Название продукта".
-        
-        - Позиции в xml-файле и строки исходного файла сопоставляются сначала по цене, затем по кодам ОКПД/КТРУ, затем по описанию товара.
-        
-        - Если обрабатываемый файл содержит не все позиции контракта, информация будет добавлена только по присутствующим, исходя из максимального соответствия.
-        
-        - Дополнительно переименовывать столбцы или сортировать строки в обрабатываемом файле не требуется. Даже если позиции одного контракта разнесены по строкам в разные части файла, один контракт парсится один раз, т.к. в начале обработки создается словарь ссылок.
-        
-        - Для удобства в процессе обработки сбрасывается графическое оформление. Результат сохраняется в отдельный файл.
-        
-        - Сохранение происходит каждые найденные 100 элементов и в конце файла.
-        
-        Версия Python 3.13.1 или выше.
-        
-        Использованные библиотеки: 
-        setuptools~=75.8.2
-        typing_extensions~=4.12.2
-        beautifulsoup4~=4.13.3
-        lxml~=5.3.1
-        aiofiles~=24.1.0
-        pandas~=2.2.3
-        numpy~=2.2.3
-        requests~=2.32.3
-        ipywidgets~=8.1.5
-        aiohttp~=3.11.13
-        cssselect
-        fuzzywuzzy~=0.18.0
-        openpyxl
-        toga
-        pyinstaller
+            Эта программа парсит сайт госзакупок для обогащения информации о контрактах.
+            Текущая версия программы: 1.1.0
+             
+            Поиск ведется:
+                Для 223фз - раздел "Информация о договоре" / "Предмет договора";
+                Для 44фз - раздел "Контракт" либо "Вложения" / html-файл контракта в части описания товаров и их характеристик;
+                Для 44фз - раздел "Вложения" / xml-файл контракта в т.ч. в части торговой марки, НКМИ, названия НКМИ, описания товара из РУ.
+            
+            Особенности работы:
+                В файле должны присутствовать столбцы а) "Ссылка на источник", б) "Цена за единицу продукции", в) "Код ОКПД2/КТРУ продукта" либо "Код товара, работы или услуги (ОКПД2)", г) "Наименование продукта" либо "Название продукта".
+                Дополнительно переименовывать столбцы или сортировать строки в обрабатываемом файле не требуется. Даже если позиции одного контракта разнесены по строкам в разные части файла, один контракт парсится один раз, т.к. в начале обработки создается словарь ссылок.
+                Позиции с сайта и строки исходного файла сопоставляются сначала по цене, затем по кодам ОКПД/КТРУ (ОПЦИЯ), затем по описанию товара. ОПЦИЯ: каждая позиция с сайта используется только один раз.
+                Если обрабатываемый файл содержит не все позиции контракта, информация будет добавлена только по присутствующим, исходя из максимального соответствия.
+                Для удобства в процессе обработки сбрасывается графическое оформление. Информация записывается в новые столбцы в конце. Результат сохраняется в отдельные файлы по 300 строк каждый.
+                    
+            Версия Python 3.13.1 или выше.
+                    
+            Использованные библиотеки: 
+                setuptools~=75.8.2
+                typing_extensions~=4.12.2
+                beautifulsoup4~=4.13.3
+                lxml~=5.3.1
+                aiofiles~=24.1.0
+                pandas~=2.2.3
+                numpy~=2.2.3
+                requests~=2.32.3
+                ipywidgets~=8.1.5
+                aiohttp~=3.11.13
+                cssselect~=1.2.0
+                fuzzywuzzy~=0.18.0
+                openpyxl~=3.1.5
+                toga~=0.5.1
+                pyinstaller~=6.13.0
         """))
         self.label.text = "Была предоставлена информация о приложении"
 
@@ -291,8 +292,9 @@ class GuiApplication(toga.App):
                                                 if
                                                 file_el.product_name != '' and file_el.file_element_type == FileElementType.XML]
                         html_product_info_els = [file_el for file_el in file_elements if
-                                                file_el.product_name != '' and file_el.file_element_type == FileElementType.HTML]
-                        universal_col_datas = [file_el.col_data for file_el in file_elements if file_el.product_name == '']
+                                                 file_el.product_name != '' and file_el.file_element_type == FileElementType.HTML]
+                        universal_col_datas = [file_el.col_data for file_el in file_elements if
+                                               file_el.product_name == '']
 
                         end = datetime.datetime.now()
                         logger.info(f'Downloaded and parse xml for {link} -- {end - start}')
@@ -322,7 +324,8 @@ class GuiApplication(toga.App):
                         end = datetime.datetime.now()
                         logger.info(f'Fuzzy search ended for link: {link} for html elements -- {end - start}')
 
-                        if len(xml_product_info_els) == len(html_product_info_els) == 0 and len(universal_col_datas) != 0:
+                        if len(xml_product_info_els) == len(html_product_info_els) == 0 and len(
+                                universal_col_datas) != 0:
                             for input_el in input_elements:
                                 new_elements.append(OutputElement(
                                     index_in_input_file=input_el.index_in_input_file,

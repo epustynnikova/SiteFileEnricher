@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='site_file_enricher',
-    version='0.0.1',
+    version='1.1.0',
     packages=[
         '.site_file_enricher',
         '.site_file_enricher.model',

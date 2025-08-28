@@ -1,4 +1,4 @@
-site_file_enricher~=0.0.1
+site_file_enricher~=1.1.0
 setuptools~=75.8.2
 typing_extensions~=4.12.2
 beautifulsoup4~=4.13.3
@@ -9,8 +9,8 @@ numpy~=2.2.3
 requests~=2.32.3
 ipywidgets~=8.1.5
 aiohttp~=3.11.13
-cssselect
+cssselect~=1.2.0
 fuzzywuzzy~=0.18.0
-openpyxl
-toga
-pyinstaller
+openpyxl~=3.1.5
+toga~=0.5.1
+pyinstaller~=6.13.0

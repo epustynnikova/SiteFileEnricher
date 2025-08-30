@@ -45,21 +45,13 @@ def search(input_elements: list[InputElement],
                 limit=1)
             if len(fuzzy_result) > 0 and fuzzy_result[0][1] > 70:
                 product_name = fuzzy_result[0][0]
-                if check_okpd:
-                    file_els = [file_el for file_el in price_to_name_to_file_elements[price][product_name]
-                                if filter_col_datas(file_el, input_el.okpd_ktru)]
-                    output_elements.append(OutputElement(
-                        index_in_input_file=input_el.index_in_input_file,
-                        link=input_el.link,
-                        new_col_datas=[file_el.col_data for file_el in file_els]
-                    ))
-                else:
-                    file_els = [file_el for file_el in price_to_name_to_file_elements[price][product_name]]
-                    output_elements.append(OutputElement(
-                        index_in_input_file=input_el.index_in_input_file,
-                        link=input_el.link,
-                        new_col_datas=[file_el.col_data for file_el in file_els]
-                    ))
+                file_els = [file_el for file_el in price_to_name_to_file_elements[price][product_name]
+                            if not check_okpd or filter_col_datas(file_el, input_el.okpd_ktru)]
+                output_elements.append(OutputElement(
+                    index_in_input_file=input_el.index_in_input_file,
+                    link=input_el.link,
+                    new_col_datas=[file_el.col_data for file_el in file_els]
+                ))
                 if use_product_once:
                     price_to_name_to_file_elements[price][product_name] = [
                         file_el

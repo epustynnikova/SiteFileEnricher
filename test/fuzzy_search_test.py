@@ -34,7 +34,7 @@ class TestFuzzySearch(unittest.TestCase):
                 ktru='21.20.23.110-00008340', okpd='21.20.23.110')
         ]
         # when:
-        result = search(input_data, file_data)
+        result = search(input_data, file_data, check_okpd=False)
 
         # then:
         self.assertEqual(2, len(result))

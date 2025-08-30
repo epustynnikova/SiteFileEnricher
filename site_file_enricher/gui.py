@@ -131,7 +131,7 @@ class GuiApplication(toga.App):
             "Информация о приложении", on_press=self.action_app_info_dialog, style=btn_style
         )
 
-        switch_check_okpd = toga.Switch(
+        self.switch_check_okpd = toga.Switch(
             text="Проверять ОКПД при сопоставлении строк",
             on_change=self.check_okpd,
             value=True,
@@ -152,7 +152,7 @@ class GuiApplication(toga.App):
             children=[
                 btn_app_open_xslx,
                 btn_app_open_cert,
-                switch_check_okpd,
+                self.switch_check_okpd,
                 self.switch_use_product_once_during_fuzzy_search,
                 self.progress_bar,
                 btn_start,
@@ -170,10 +170,11 @@ class GuiApplication(toga.App):
         self.main_window.show()
 
     async def check_okpd(self, widget):
-        if self.check_okpd.value:
-            self.check_okpd.value = False
+        switch_value = self.switch_check_okpd.value
+        if switch_value:
+           self.label.text = "Режим 'Проверка ОКПД при сопоставлении строк' включен"
         else:
-            self.check_okpd.value = True
+            self.label.text = "Режим 'Проверка ОКПД при сопоставлении строк' выключен"
 
     async def action_use_product_once_during_fuzzy_search(self, widget):
         switch_value = self.switch_use_product_once_during_fuzzy_search.value
@@ -305,7 +306,8 @@ class GuiApplication(toga.App):
                         searched_output_elements = search(
                             input_elements,
                             xml_product_info_els,
-                            use_product_once=self.switch_use_product_once_during_fuzzy_search.value)
+                            use_product_once=self.switch_use_product_once_during_fuzzy_search.value,
+                            check_okpd=self.switch_check_okpd.value)
                         for searched_output_element in searched_output_elements:
                             searched_output_element.new_col_datas += universal_col_datas
                         new_elements += searched_output_elements

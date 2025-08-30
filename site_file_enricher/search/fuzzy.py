@@ -15,7 +15,8 @@ def filter_col_datas(file_el: FileElement, okpd_ktru: Union[str, None]) -> bool:
 
 def search(input_elements: list[InputElement],
            file_elements: list[FileElement],
-           use_product_once: bool = False) -> list[OutputElement]:
+           use_product_once: bool = False,
+           check_okpd: bool = True) -> list[OutputElement]:
     output_elements = []
     price_to_name_to_file_elements = {}
     for file_element in file_elements:
@@ -45,7 +46,7 @@ def search(input_elements: list[InputElement],
             if len(fuzzy_result) > 0 and fuzzy_result[0][1] > 70:
                 product_name = fuzzy_result[0][0]
                 file_els = [file_el for file_el in price_to_name_to_file_elements[price][product_name]
-                            if filter_col_datas(file_el, input_el.okpd_ktru)]
+                            if not check_okpd or filter_col_datas(file_el, input_el.okpd_ktru)]
                 output_elements.append(OutputElement(
                     index_in_input_file=input_el.index_in_input_file,
                     link=input_el.link,

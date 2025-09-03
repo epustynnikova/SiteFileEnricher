@@ -107,7 +107,6 @@ class GuiApplication(toga.App):
 
         self.label = toga.Label("Приложение запущено.", style=Pack(margin_top=20))
 
-        # Buttons
         btn_style = Pack(flex=1)
         btn_app_open_xslx = toga.Button(
             "Открыть xslx-файл",
@@ -147,7 +146,6 @@ class GuiApplication(toga.App):
 
         self.progress_bar = toga.ProgressBar(max=100, value=0)
 
-        # Outermost box
         box = toga.Box(
             children=[
                 btn_app_open_xslx,
@@ -163,10 +161,8 @@ class GuiApplication(toga.App):
             style=Pack(flex=1, direction=COLUMN, margin=10),
         )
 
-        # Add the content on the main window
         self.main_window.content = box
 
-        # Show the main window
         self.main_window.show()
 
     async def check_okpd(self, widget):

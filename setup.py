@@ -11,5 +11,3 @@ setup(
         '.site_file_enricher.search'
     ]
 )
-
-# python setup.py bdist_wheel --universal

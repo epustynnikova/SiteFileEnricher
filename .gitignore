@@ -4,3 +4,4 @@ dist/
 local_files/
 *.spec
 site_file_enricher.egg-info/
+.idea

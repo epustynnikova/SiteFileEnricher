@@ -1,11 +1,13 @@
+import os
 import unittest
 
 from site_file_enricher import XMLParser, RootXMLElement, XMLElement
-
+from test.test_utils import get_file_source_path
 
 class TestXmlParser(unittest.TestCase):
     def test_parse_xml(self):
         # given:
+        file_path = get_file_source_path(os.path.join('xml', 'test.xml'))
         root_xml_element = RootXMLElement(
             name="product_info",
             field_name="productInfo",
@@ -21,7 +23,7 @@ class TestXmlParser(unittest.TestCase):
         parser = XMLParser(root_xml_element)
 
         # when:
-        with open('sources/xml/test.xml', 'r') as file:
+        with open(file_path, 'r') as file:
             result = parser.parse(file.read(), 'test')
 
         # then:
@@ -36,6 +38,7 @@ class TestXmlParser(unittest.TestCase):
 
     def test_parse_ktru_xml(self):
         # given:
+        file_path = get_file_source_path(os.path.join('xml', 'ktru_problem.xml'))
         product_info_root_xml_element = RootXMLElement(
             name="product_info",
             field_name="productInfo",
@@ -53,7 +56,7 @@ class TestXmlParser(unittest.TestCase):
         parser = XMLParser(product_info_root_xml_element)
 
         # when:
-        with open('sources/xml/ktru_problem.xml', 'r') as file:
+        with open(file_path, 'r') as file:
             result = parser.parse(
                 file.read(),
                 'https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2320300308025000015')
@@ -64,6 +67,7 @@ class TestXmlParser(unittest.TestCase):
 
     def test_parse_small_xml(self):
         # given:
+        file_path = get_file_source_path(os.path.join('xml', 'el_contract_small.xml'))
         product_info_root_xml_element = RootXMLElement(
             name="product_info",
             field_name="productInfo",
@@ -106,7 +110,7 @@ class TestXmlParser(unittest.TestCase):
         )
 
         # when:
-        with open('sources/xml/el_contract_small.xml', 'r') as file:
+        with open(file_path, 'r') as file:
             result = parser.parse(file.read(), 'test')
 
         # then:
@@ -114,6 +118,7 @@ class TestXmlParser(unittest.TestCase):
 
     def test_parse_duplicated_name_xml(self):
         # given:
+        file_path = get_file_source_path(os.path.join('xml', 'duplicated_name.xml'))
         product_info_root_xml_element = RootXMLElement(
             name="product_info",
             field_name="productInfo",
@@ -129,7 +134,7 @@ class TestXmlParser(unittest.TestCase):
         )
 
         # when:
-        with open('sources/xml/duplicated_name.xml', 'r') as file:
+        with open(file_path, 'r') as file:
             result = parser.parse(
                 file.read(),
                 'https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772801635124000615'
@@ -140,6 +145,7 @@ class TestXmlParser(unittest.TestCase):
 
     def test_ligand(self):
         # given:
+        file_path = get_file_source_path(os.path.join('xml', 'ligand.xml'))
         product_info_root_xml_element = RootXMLElement(
             name="product_info",
             field_name="productInfo",
@@ -175,7 +181,7 @@ class TestXmlParser(unittest.TestCase):
         )
 
         # when:
-        with open('sources/xml/ligand.xml', 'r') as file:
+        with open(file_path, 'r') as file:
             result = parser.parse(
                 file.read(),
                 'https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772801635124000615'

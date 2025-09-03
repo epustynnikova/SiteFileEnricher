@@ -1,10 +1,14 @@
+import os
 import unittest
 from site_file_enricher.file_parser.html_parser import HTMLParser, HTMLElement, HTMLContractFormat, RootTHMLElement
+from test.test_utils import get_file_source_path
 
 
 class TestHTMLParser(unittest.TestCase):
+
     def test_parse_html_type_a(self):
         # given:
+        file_path = get_file_source_path(os.path.join('html', 'type_a.html'))
         type_a_root_element = RootTHMLElement(
             contract_format=HTMLContractFormat.TYPE_A,
             product_html_element=HTMLElement(name="html_product_name", column_index=1),
@@ -18,7 +22,7 @@ class TestHTMLParser(unittest.TestCase):
         parser = HTMLParser(type_a_root_element, None)
 
         # when:
-        with open('sources/html/type_a.html', 'r') as file:
+        with open(file_path, 'r') as file:
             results = parser.parse(file.read(), 'test')
 
         # then:
@@ -41,6 +45,7 @@ class TestHTMLParser(unittest.TestCase):
 
     def test_parse_html_type_b(self):
         # given:
+        file_path = get_file_source_path(os.path.join('html', 'type_b.html'))
         type_b_root_element = RootTHMLElement(
             contract_format=HTMLContractFormat.TYPE_B,
             product_html_element=HTMLElement(name="html_product_name", column_index=1),
@@ -66,7 +71,7 @@ class TestHTMLParser(unittest.TestCase):
         }
 
         # when:
-        with open('sources/html/type_b.html', 'r') as file:
+        with open(file_path, 'r') as file:
             results = parser.parse(file.read(), 'test')
 
         # then:
@@ -84,6 +89,7 @@ class TestHTMLParser(unittest.TestCase):
 
     def test_both(self):
         # given:
+        file_path = get_file_source_path(os.path.join('html', 'row_9.html'))
         type_a_root_element = RootTHMLElement(
             contract_format=HTMLContractFormat.TYPE_A,
             product_html_element=HTMLElement(name="html_product_name", column_index=1),
@@ -108,19 +114,15 @@ class TestHTMLParser(unittest.TestCase):
         parser = HTMLParser(type_a_root_element, type_b_root_element)
 
         # when:
-        with open('sources/html/row_9.html', 'r') as file:
+        with open(file_path, 'r') as file:
             results = parser.parse(file.read(), 'test')
 
         # then:
         self.assertEqual(6, len(results))
 
-    def test_contract_layer(self):
-        # given:
-        url = 'https://zakupki.gov.ru/epz/order/notice/rpec/contract-draft.html?regNumber=01015000003250001460011'
-
-
     def test_(self):
         # given:
+        file_path = get_file_source_path(os.path.join('html', 'test.html'))
         type_a_root_element = RootTHMLElement(
             contract_format=HTMLContractFormat.TYPE_A,
             product_html_element=HTMLElement(name="html_product_name", column_index=1),
@@ -145,7 +147,7 @@ class TestHTMLParser(unittest.TestCase):
         parser = HTMLParser(type_a_root_element, type_b_root_element)
 
         # when:
-        with open('sources/html/test.html', 'r') as file:
+        with open(file_path, 'r') as file:
             results = parser.parse(file.read(), 'test')
 
         # then:

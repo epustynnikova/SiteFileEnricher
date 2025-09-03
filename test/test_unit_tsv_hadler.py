@@ -1,14 +1,16 @@
 import csv
+import os
 import unittest
 from site_file_enricher import OutputElement, FileColData
 from site_file_enricher.io.file_handler import TSVFileHandler, FileFormat, get_handler
-
+from test.test_utils import get_file_source_path
 
 class TestTSVFileHandler(unittest.TestCase):
     def test_read(self):
         # given:
-        with open('sources/in/test_in.tsv', mode='r') as in_f, open('sources/in/test_out.tsv', mode='w') as out_f:
-            handler = TSVFileHandler(in_f, out_f)
+        file_path = get_file_source_path(os.path.join('in', 'test_in.tsv'))
+        with open(file_path, mode='r') as in_f:
+            handler = TSVFileHandler(in_f, None)
             test_data = {
                 1: 1,
                 2: 3,
@@ -36,8 +38,10 @@ class TestTSVFileHandler(unittest.TestCase):
 
     def test_write(self):
         # given:
-        with open('sources/out/test_in.tsv', mode='r') as in_f, open('sources/out/test_out.tsv', mode='w') as out_f:
-            handler = TSVFileHandler(in_f, out_f)
+        in_file_path = get_file_source_path(os.path.join('out', 'test_in.tsv'))
+        out_file_path = get_file_source_path(os.path.join('out', 'test_out.tsv'))
+        with open(in_file_path, mode='r') as in_f:
+            handler = TSVFileHandler(in_f, out_file_path)
             handler.read()
 
             # when:
@@ -49,7 +53,7 @@ class TestTSVFileHandler(unittest.TestCase):
             )
 
         # then:
-        with open('sources/out/test_out.tsv', mode='r') as out_f:
+        with open(out_file_path, mode='r') as out_f:
             file = csv.reader(out_f, dialect='excel-tab')
             header = next(file)
             self.assertIn('field_a', header)
@@ -71,9 +75,10 @@ class TestGetReader(unittest.TestCase):
     def test_get_reader(self):
         # given:
         file_format = FileFormat.TSV
+        file_path = get_file_source_path(os.path.join('in', 'test_in.tsv'))
 
         # when:
-        with open('sources/in/test_in.tsv', mode='r') as in_f:
+        with open(file_path, mode='r') as in_f:
             reader = get_handler(
                 file_format=file_format,
                 input_file=in_f,

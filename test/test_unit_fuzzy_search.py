@@ -4,7 +4,6 @@ from site_file_enricher.search.fuzzy import search
 
 
 class TestFuzzySearch(unittest.TestCase):
-    # todo: fix it :)
     def test_without_ktru(self):
         # given:
         input_data = [

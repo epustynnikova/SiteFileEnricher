@@ -138,20 +138,3 @@ def enrich_file_with_default_settings(
         site_handler=site_handler,
         cert_abs_path=cert_abs_path
     )
-
-
-if __name__ == "__main__":
-    try:
-        enrich_file_with_default_settings(
-        abs_path_to_file=os.path.abspath('10_apr_deleted500.xlsx'),
-        cert_abs_path=os.path.abspath('../russiantrustedca/russiantrustedca.pem'),
-        out_path=os.path.dirname(os.path.abspath('result.xlsx')),
-        out_file_name="enriched_10_apr_deleted500.xlsx"
-        )
-    except Exception as ex:
-        print(ex)
-# import os
-# >>> from site_file_enricher.script import enrich_file_with_default_settings
-# >>> cert_path = os.path.abspath('russiantrustedca/russiantrustedca.pem')
-# >>> path = os.path.abspath('my_example.txt')
-# >>> enrich_file_with_default_settings(path, cert_path)

@@ -1,11 +1,11 @@
 import asyncio
-import os
 import unittest
 import warnings
 
 from site_file_enricher.file_parser.xml_parser import XMLParser, RootXMLElement, XMLElement
 from site_file_enricher.file_parser.html_parser import HTMLParser, HTMLElement, HTMLContractFormat, RootTHMLElement
 from site_file_enricher.io.site_handler import SiteHandler
+from test.test_utils import get_cert_abs_path
 
 warnings.filterwarnings('ignore')
 
@@ -29,7 +29,7 @@ class TestSiteHandler(unittest.TestCase):
         # when:
         result = asyncio.run(site_handler.download_xml_and_parse(
             contract_link=link,
-            cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
+            cert_abs_path=get_cert_abs_path()
         ))
 
         # then:
@@ -68,7 +68,7 @@ class TestSiteHandler(unittest.TestCase):
         # when:
         result = asyncio.run(site_handler.download_xml_and_parse(
             contract_link=link,
-            cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
+            cert_abs_path=get_cert_abs_path()
         ))
 
         # then:
@@ -109,13 +109,12 @@ class TestSiteHandler(unittest.TestCase):
         )
         htmp_parser = HTMLParser(type_a_root_element, type_b_root_element)
         site_handler = SiteHandler(xml_parser=XMLParser(root_xml_element), html_parser=htmp_parser)
-        # link = 'https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2772401520524001885'
         link = 'https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1623401336625000004'
 
         # when:
         result =  asyncio.run(site_handler.download_xml_and_parse(
             contract_link=link,
-            cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
+            cert_abs_path=get_cert_abs_path()
         ))
         print(result)
 
@@ -128,7 +127,7 @@ class TestSiteHandler(unittest.TestCase):
         # when:
         result = asyncio.run(site_handler.download_xml_and_parse(
             contract_link=link,
-            cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
+            cert_abs_path=get_cert_abs_path()
         ))
 
         # then:
@@ -167,7 +166,7 @@ class TestSiteHandler(unittest.TestCase):
         # when:
         result = asyncio.run(site_handler.download_xml_and_parse(
             contract_link=link,
-            cert_abs_path=os.path.abspath('sources/russiantrustedca/russiantrustedca.pem')
+            cert_abs_path=get_cert_abs_path()
         ))
 
         # then:

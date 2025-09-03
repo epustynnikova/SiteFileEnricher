@@ -1,16 +1,16 @@
 import os
-import shutil
 import unittest
 import pandas as pd
 
 from site_file_enricher.model.dto import OutputElement, FileColData
 from site_file_enricher.io.file_handler import XLXSFileHandler
+from test.test_utils import get_file_source_path
 
 
 class TestXLSXFileHandler(unittest.TestCase):
     def test_read(self):
         # given:
-        path = 'sources/xlsx/short_example.xlsx'
+        path = get_file_source_path(os.path.join('xlsx' , 'short_example.xlsx'))
         output_file_path = 'sources/xlsx'
         output_file_name = 'short_example.xlsx'
         handler = XLXSFileHandler(path, [], output_file_path, output_file_name)
@@ -37,8 +37,8 @@ class TestXLSXFileHandler(unittest.TestCase):
 
     def test_read_ktru(self):
         # given:
-        path = 'sources/xlsx/testold.xlsx'
-        output_file_path = 'sources/xlsx'
+        path = get_file_source_path(os.path.join('xlsx' , 'testold.xlsx'))
+        output_file_path = get_file_source_path('xlsx')
         output_file_name = 'testold.xlsx'
         handler = XLXSFileHandler(path, ['field_a'], output_file_path, output_file_name)
 
@@ -51,8 +51,8 @@ class TestXLSXFileHandler(unittest.TestCase):
 
     def test_write(self):
         # given:
-        path = 'sources/xlsx/short_example.xlsx'
-        output_file_path = 'sources/xlsx'
+        path = get_file_source_path(os.path.join('xlsx' , 'short_example.xlsx'))
+        output_file_path = get_file_source_path('xlsx')
         output_file_name = 'short_example.xlsx'
         handler = XLXSFileHandler(path, ['field_a', 'field_b'], output_file_path, output_file_name)
         additional_elements = [

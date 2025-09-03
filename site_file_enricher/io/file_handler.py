@@ -142,8 +142,7 @@ class TSVFileHandler(FileHandler):
 
     def __init__(self, input_file: TextIO, output_file):
         self.input_file = csv.reader(input_file, dialect='excel-tab')
-        with open('sources/in/test_out.tsv', mode='w') as out_f:
-            self.output_file = csv.writer(out_f, dialect='excel-tab')
+        self.output_file = output_file
         self.input_file_data = []
 
     def read_elements_count(self) -> int:
@@ -172,31 +171,33 @@ class TSVFileHandler(FileHandler):
         return elements
 
     def write(self, additional_elements: list[OutputElement], link = None):
-        col_data_names = list(
-            set([col_data.name for element in additional_elements for col_data in element.new_col_datas]))
-        col_data_names.sort()
+        with open(self.output_file, mode='w') as out_f:
+            output_file_writer = csv.writer(out_f, dialect='excel-tab')
+            col_data_names = list(
+                set([col_data.name for element in additional_elements for col_data in element.new_col_datas]))
+            col_data_names.sort()
 
-        header = self.input_file_data[0]
-        self.output_file.writerow(header + col_data_names)
+            header = self.input_file_data[0]
+            output_file_writer.writerow(header + col_data_names)
 
-        new_info_by_line = {}
-        for element in additional_elements:
-            new_info = []
-            added_info = dict({(ncd.name, ncd.value) for ncd in element.new_col_datas})
-            for col_data_name in col_data_names:
-                if col_data_name in added_info:
-                    new_info.append(added_info[col_data_name])
+            new_info_by_line = {}
+            for element in additional_elements:
+                new_info = []
+                added_info = dict({(ncd.name, ncd.value) for ncd in element.new_col_datas})
+                for col_data_name in col_data_names:
+                    if col_data_name in added_info:
+                        new_info.append(added_info[col_data_name])
+                    else:
+                        new_info.append(None)
+                new_info_by_line[element.index_in_input_file] = new_info
+
+            for idx, row in enumerate(self.input_file_data):
+                if idx == 0:
+                    continue
+                if idx in new_info_by_line:
+                    output_file_writer.writerow(row + new_info_by_line[idx])
                 else:
-                    new_info.append(None)
-            new_info_by_line[element.index_in_input_file] = new_info
-
-        for idx, row in enumerate(self.input_file_data):
-            if idx == 0:
-                continue
-            if idx in new_info_by_line:
-                self.output_file.writerow(row + new_info_by_line[idx])
-            else:
-                self.output_file.writerow(row)
+                    output_file_writer.writerow(row)
 
 
 def get_handler(file_format: FileFormat, input_file, output_file_path, output_file_name,
